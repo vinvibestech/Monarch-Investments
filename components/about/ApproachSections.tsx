@@ -122,7 +122,7 @@ export default function ApproachSections() {
       {/* =====================================================
           OUR APPROACH
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-26">
+      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto
@@ -191,7 +191,7 @@ export default function ApproachSections() {
       {/* =====================================================
           STRATEGIC PARTNERSHIPS
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-26">
+      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto
@@ -258,7 +258,7 @@ export default function ApproachSections() {
       {/* =====================================================
           OUR GROUP
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-26">
+      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto
