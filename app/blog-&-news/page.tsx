@@ -13,6 +13,7 @@ export default function page() {
                 label="Blog & News"
                 title="Insights That Drive Smarter Decisions"
                 description="Stay informed with the latest company updates, investment trends, industry news, and expert insights across Education, Tourism, Energy, and Agriculture."
+                        tagLine=""
                 image="/home/hero.png"
             />
          <SectionHeader

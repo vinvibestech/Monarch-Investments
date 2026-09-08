@@ -54,6 +54,11 @@ export default function Navbar() {
   const [language, setLanguage] = useState("en");
   const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+  document.documentElement.dir = language === "en" ? "ltr" : "rtl";
+  document.documentElement.lang = language === "ar" ? "ar" : "en";
+}, [language]);
+
   // Hovered menu item
   const [hoveredItem, setHoveredItem] = useState(menuItems[0]);
 

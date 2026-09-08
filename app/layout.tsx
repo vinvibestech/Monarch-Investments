@@ -28,8 +28,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
-    <html lang="en" className={`${mada.variable} h-full antialiased`}>
+    <html lang="en" 
+    className={`${mada.variable} h-full antialiased`}>
       <body className={`${mada.className} min-h-full flex flex-col`}>
        
         {children}

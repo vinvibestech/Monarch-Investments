@@ -6,6 +6,7 @@ interface AboutHighlightProps {
   label: string;
   title: string;
   description: string;
+  tagLine: string;
   image: string;
   imageAlt?: string;
   className?: string;
@@ -15,6 +16,7 @@ export default function Highlight({
   label,
   title,
   description,
+  tagLine,
   image,
   imageAlt = "Image",
   className = "",
@@ -50,6 +52,13 @@ export default function Highlight({
             <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               {description}
             </p>
+            {tagLine && (
+              <div className="mt-8 border-t border-black/10 pt-6">
+                <p className="text-lg font-semibold tracking-tight text-black sm:text-lg lg:text-[20px]">
+                  {tagLine}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -4,22 +4,22 @@ const sectors = [
   {
     title: "Education",
     description:
-      "Supporting quality education through innovation, knowledge, and skill development to prepare future generations.",
+      "Investing in educational initiatives and solutions that encourage knowledge, skill development, innovation, and opportunities for future generations.",
   },
   {
     title: "Tourism",
     description:
-      "Investing in sustainable tourism and hospitality projects that create exceptional experiences and economic growth.",
+      "Supporting sustainable tourism and hospitality opportunities designed to connect people, destinations, cultures, and economic potential.",
   },
   {
     title: "Energy",
     description:
-      "Driving renewable and future-ready energy solutions that contribute to a cleaner and more sustainable world.",
+      "Advancing innovative and future-focused energy initiatives that contribute to cleaner, more efficient, and sustainable development.",
   },
   {
     title: "Agriculture",
     description:
-      "Advancing modern agriculture and sustainable farming practices to strengthen food security and environmental responsibility.",
+      "Supporting modern agriculture, sustainable farming, agribusiness innovation, and initiatives that strengthen food security and responsible resource management.",
   },
 ];
 

@@ -14,19 +14,23 @@ export default function WhoWeAre() {
             Investing in a Better Future
           </h2>
 
-          <div className="mt-8 max-w-[1280px] lg:mt-12">
+          <div className="mt-8 max-w-[1280px] lg:mt-10">
             <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
-              Monarch Investments is a diversified investment company dedicated
-              to driving sustainable growth through strategic investments in
-              Education, Tourism, Energy, and Agriculture. Our mission is to
-              identify high-potential opportunities that generate lasting value
-              for businesses, investors, and communities.
+              Monarch Global Investments brings businesses, investments, strategic alliances, and emerging opportunities together under a unified corporate structure.
             </p>
 
-            <p className="mt-6 text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
-              By combining industry expertise with a forward-thinking approach,
-              we build strong partnerships and deliver innovative solutions that
-              contribute to economic development and long-term success.
+            <p className="mt-5 text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              Our activities span Education, Agriculture, Energy, and Tourism, with a strong emphasis on sustainability, innovation, responsible growth, and long-term value creation.
+
+            </p>
+            <p className="mt-5 text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              We work closely with businesses, entrepreneurs, partners, and industry specialists to identify opportunities, strengthen business models, establish strategic connections, and support sustainable expansion.
+
+            </p>
+            <p className="mt-5 text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              Our approach is built on careful analysis, precise planning, effective execution, and the belief that successful growth requires both vision and the right timing.
+
+
             </p>
           </div>
         </div>
@@ -39,16 +43,12 @@ export default function WhoWeAre() {
               Our Mission
             </span>
 
-            <h3 className="mt-4 max-w-[400px] text-2xl font-semibold leading-[1.2] text-black sm:text-3xl lg:text-[28px]">
-              Creating Value Through Strategic Partnerships
-            </h3>
+            <p className="mt-6 max-w-[520px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:mt-3 lg:text-[20px] lg:leading-[2]">
+              To transform opportunities into sustainable businesses by combining investment, expertise, strategic partnerships, and disciplined execution to create lasting value.
 
-            <p className="mt-6 max-w-[520px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:mt-10 lg:text-[20px] lg:leading-[2]">
-              Our mission is to empower businesses and investors by providing
-              responsible investment solutions, supporting innovation, and
-              building partnerships that drive sustainable economic growth and
-              positive social impact.
             </p>
+
+
           </div>
 
           {/* Vision */}
@@ -57,15 +57,11 @@ export default function WhoWeAre() {
               Our Vision
             </span>
 
-            <h3 className="mt-4 max-w-[400px] text-2xl font-semibold leading-[1.2] text-black sm:text-3xl lg:text-[28px]">
-              Shaping Tomorrow Through Smart Investments
-            </h3>
 
-            <p className="mt-6 max-w-[520px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:mt-10 lg:text-[20px] lg:leading-[2]">
-              To become a trusted global investment company recognized for
-              creating sustainable opportunities, fostering innovation, and
-              delivering long-term value across multiple industries.
+            <p className="mt-6 max-w-[520px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:mt-3 lg:text-[20px] lg:leading-[2]">
+              To shape a sustainable future through strategic investments, innovation, and responsible growth.
             </p>
+
           </div>
         </div>
       </div>
