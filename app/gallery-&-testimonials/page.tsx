@@ -13,6 +13,7 @@ export default function page() {
                 label="Gallery & Testimonials"
                 title="Showcasing Our Journey & Success Stories"
                 description="Explore moments that reflect our commitment to innovation, strategic partnerships, and sustainable growth while hearing from those who have worked with Monarch Investments."
+                tagLine=""
                 image="/home/hero.png"
             />
             <SectionHeader
@@ -21,7 +22,7 @@ export default function page() {
                 description="Our gallery highlights key moments from business events, strategic partnerships, industry initiatives, and projects across Education, Tourism, Energy, and Agriculture."
             />
             <GalleryCategories />
-            <Testimonials/>
+            <Testimonials />
             <Footer />
         </>
     );

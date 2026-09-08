@@ -15,6 +15,7 @@ export default function page() {
                 label="Investment Information"
                 title="Empowering Sustainable Investments for Long-Term Growth"
                 description="Monarch Investments provides strategic investment opportunities across Education, Tourism, Energy, and Agriculture, helping businesses and investors achieve sustainable growth through responsible and future-focused investments."
+                tagLine=""
                 image="/home/hero.png"
             />
             <SectionHeader
@@ -23,8 +24,8 @@ export default function page() {
                 description="Monarch Investments is committed to creating long-term value through diversified investments and strategic partnerships. We focus on identifying high-potential opportunities while maintaining transparency, innovation, and responsible investment practices."
             />
             <WhyInvest />
-            <BusinessSectors/>
-            <OurInvestment/>
+            <BusinessSectors />
+            <OurInvestment />
             <Footer />
         </>
     );
