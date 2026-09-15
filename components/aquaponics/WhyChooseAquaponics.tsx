@@ -6,19 +6,25 @@ const features = [
   {
     title: "Fresh & Healthy Produce",
     description:
-      "Grow fresh vegetables, herbs, and leafy greens naturally while maintaining high quality and nutritional value.",
+      "Aquaponics can support the cultivation of fresh vegetables, herbs and leafy greens within controlled growing environments, helping maintain consistent growing conditions and product quality.",
     image: "/home/hero.png",
   },
   {
     title: "Water Efficient",
     description:
-      "Uses up to 90% less water than traditional farming methods through continuous water recycling.",
+      "Because water is continuously circulated through the growing system, aquaponics can substantially reduce water consumption compared with many conventional farming methods.",
     image: "/home/hero.png",
   },
   {
-    title: "Eco-Friendly System",
+    title: "Resource-Efficient System",
     description:
-      "Supports sustainable food production with minimal waste and reduced environmental impact.",
+      "The integration of fish and plant production creates a connected ecosystem designed to reuse nutrients and water efficiently while reducing waste.",
+    image: "/home/hero.png",
+  },
+  {
+    title: "Sustainable Food Production",
+    description:
+      "Aquaponics offers an alternative approach to food production that can support local agriculture, responsible resource management and long-term food-security initiatives.",
     image: "/home/hero.png",
   },
 ];
@@ -35,23 +41,24 @@ export default function WhyChooseAquaponics() {
             </span>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-           Sustainable Agriculture
+         Sustainable Agriculture
             </h2>
           </div>
 
           <div>
             <p className="max-w-[560px] text-base mt-5 leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
-         Aquaponics promotes environmentally responsible farming by reducing water consumption and eliminating the need for chemical fertilizers.
+         Aquaponics supports resource-efficient farming by combining food production with continuous water recirculation. It provides an innovative approach for locations where efficient use of water and growing space is important.
+
             </p>
           </div>
         </div>
 
         {/* Cards */}
-        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {features.map((item) => (
             <article
               key={item.title}
-              className="group relative h-[560px] overflow-hidden rounded-2xl"
+              className="group relative h-[350px] overflow-hidden rounded-2xl"
             >
               <Image
                 src={item.image}

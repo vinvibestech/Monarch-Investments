@@ -1,9 +1,10 @@
+import AboutAquaponics from "@/components/aquaponics/AboutAquaponics";
 import Applications from "@/components/aquaponics/Applications";
 import AquaponicsProducts from "@/components/aquaponics/AquaponicsProducts";
+import SustainableAgriculture from "@/components/aquaponics/SustainableAgriculture";
 import WhyChooseAquaponics from "@/components/aquaponics/WhyChooseAquaponics";
 import Footer from "@/components/common/Footer";
 import Highlight from "@/components/common/Highlight";
-import SectionHeader from "@/components/common/SectionHeader";
 
 
 export default function page() {
@@ -11,20 +12,17 @@ export default function page() {
 
         <>
             <Highlight
-                label="Aquaponics Products"
+                label="Aquaponics Solutions"
                 title="Sustainable Farming for a Greener Tomorrow"
-                description="Discover innovative aquaponics solutions that combine aquaculture and hydroponics to produce fresh, healthy crops while conserving water and supporting sustainable agriculture."
-                tagLine=""
-                image="/home/hero.png"
+                description="Monarch Global Investments supports innovative aquaponics and sustainable farming solutions that integrate aquaculture with hydroponic cultivation to produce fresh crops through an efficient, resource-conscious growing ecosystem."
+                tagLine="Innovative food production. Smarter water use. Sustainable growth."
+                image="/Investment/InvestmentInformation.png"
             />
-            <SectionHeader
-                label="About Aquaponics"
-                title="What is Aquaponics?"
-                description="Aquaponics is an eco-friendly farming system that combines fish farming and hydroponic plant cultivation in a single, sustainable ecosystem. It uses natural biological processes to produce fresh vegetables with significantly less water and minimal environmental impact."
-            />
+     <AboutAquaponics/>
             <WhyChooseAquaponics />
             <AquaponicsProducts />
             <Applications />
+            <SustainableAgriculture/>
             <Footer />
         </>
     );

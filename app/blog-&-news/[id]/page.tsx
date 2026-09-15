@@ -37,6 +37,7 @@ export default async function NewsDetailPage({
       company={article.company}
       paragraphs={article.content}
       trends={article.trends}
+      beyond={article.beyond}
       breadcrumbSource={from === "home" ? "home" : "blog"}
     />
   );

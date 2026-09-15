@@ -2,24 +2,24 @@
 
 const sectors = [
   {
-    title: "Education",
+    title: "Home Gardening",
     description:
-      "Supporting quality education through innovation, knowledge, and skill development to prepare future generations.",
+      "Compact aquaponics solutions can provide households with an innovative way to grow selected vegetables, herbs and leafy greens within available spaces.",
   },
   {
-    title: "Tourism",
+    title: "Commercial Farming",
     description:
-      "Investing in sustainable tourism and hospitality projects that create exceptional experiences and economic growth.",
+      "Scalable aquaponics solutions can support businesses and agricultural projects seeking controlled, resource-efficient and sustainable food-production systems.",
   },
   {
-    title: "Energy",
+    title: "Educational Institutions",
     description:
-      "Driving renewable and future-ready energy solutions that contribute to a cleaner and more sustainable world.",
+      "Aquaponics provides a practical learning environment for schools, colleges, universities and research institutions, connecting agriculture, biology, sustainability, water management and environmental science.",
   },
   {
-    title: "Agriculture",
+    title: "Community Projects",
     description:
-      "Advancing modern agriculture and sustainable farming practices to strengthen food security and environmental responsibility.",
+      "Aquaponics can support community-based initiatives focused on local food production, sustainability education, environmental awareness and responsible resource utilisation.",
   },
 ];
 
@@ -30,8 +30,12 @@ export default function Applications() {
         <div className="grid gap-16 lg:grid-cols-[340px_1fr] lg:gap-24">
           {/* Left */}
           <div>
-            <h2 className="w-[280px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.15]">
-            Applications
+            <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
+              Why Monarch
+
+            </span>
+            <h2 className=" mt-4 w-[380px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.15]">
+              Aquaponics for Different Growing Environments
             </h2>
           </div>
 

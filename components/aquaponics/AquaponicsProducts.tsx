@@ -4,32 +4,32 @@ import Image from "next/image";
 
 const products = [
   {
-    title: "Aquaponics Products",
+    title: "Hydroponic Growing Solutions",
     description:
-      "Sustainable farming solutions that combine aquaculture and hydroponics for efficient food production.",
+      "Efficient growing solutions designed to support the cultivation of vegetables, herbs and leafy greens in soil-free environments.",
     image: "/home/hero.png",
 
   },
   {
-    title: "Investment Information",
+    title: "Complete Aquaponics Systems",
     description:
-      "Access reliable investment resources, market updates, and strategic insights to support informed decisions.",
-  image: "/home/hero.png",
+      "Integrated aquaculture and hydroponic systems designed to create an efficient environment for sustainable food production.",
+    image: "/home/hero.png",
 
   },
   {
-    title: "Crypto Information",
+    title: "Fish Farming Equipment",
     description:
-      "Stay updated with blockchain technologies, digital assets, and emerging trends in the cryptocurrency market.",
-  image: "/home/hero.png",
-  
+      "Essential equipment and system components designed to support fish cultivation and help maintain a balanced aquaponics environment.",
+    image: "/home/hero.png",
+
   },
-    {
-    title: "Crypto Information",
+  {
+    title: "Farming Accessories",
     description:
-      "Stay updated with blockchain technologies, digital assets, and emerging trends in the cryptocurrency market.",
-  image: "/home/hero.png",
-  
+      "Supporting tools, components and accessories for system installation, operation, maintenance and optimisation.",
+    image: "/home/hero.png",
+
   },
 ];
 
@@ -38,18 +38,27 @@ export default function AquaponicsProducts() {
     <section className="bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 md:px-12 lg:px-20">
         {/* Top */}
-      <div className="grid lg:gap-10 xl:gap-50 lg:grid-cols-[530px_1fr]">
+        <div className="">
           <div>
             <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
-     Our Aquaponics Products
+              Our Aquaponics Products
             </span>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-        Our Aquaponics Products
-            </h2>
-          </div>
+              Integrated Solutions for Sustainable Farming
 
-   
+            </h2>
+
+            {/* Content below title */}
+            <div className="mt-5">
+
+
+              <p className=" text-base leading-7 text-black sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+                Our aquaponics product range is designed to support different applications—from smaller growing environments to scalable food-production projects.
+
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Cards */}

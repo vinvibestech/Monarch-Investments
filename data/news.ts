@@ -1,56 +1,109 @@
-export const news = [
+export interface Trend {
+  title: string;
+  description: string[];
+}
+
+export interface NewsArticleData {
+  id: number;
+  year:string;
+  title: string;
+  description:string;
+  image: string;
+  publishedDate: string;
+  category: string;
+  author: string;
+  company: string;
+  content: string[];
+  trends: Trend[];
+    beyond?: {
+    title: string;
+    paragraphs: string[];
+    closing: string;
+  };
+}
+
+export const news: NewsArticleData[] = [
   {
     id: 1,
     year: "2026",
-    title: "Strategic Investment Trends for 2026",
+    title: "Strategic Investment Trends",
 
     description:
-      "Explore emerging investment opportunities and market trends shaping the future of global business.",
+      "The global business and investment landscape continues to evolve as sustainability, emerging technologies, digital transformation and changing economic priorities reshape industries worldwide.",
 
     image: "/home/hero.png",
 
-    publishedDate: "January 15, 2026",
+    publishedDate:"January 15, 2026",
     category: "Investment Insights",
     author: "Investment Research Department",
-    company: "Monarch Investments",
+    company: "Monarch Global Investments",
 
     content: [
-      "The global investment landscape continues to evolve as emerging technologies, sustainability, and digital transformation reshape industries. Investors are increasingly focusing on opportunities that deliver long-term value while adapting to changing market dynamics.",
+      "The global business and investment landscape continues to evolve as sustainability, emerging technologies, digital transformation and changing economic priorities reshape industries worldwide.",
 
-      "At Monarch Investments, we believe strategic planning, innovation, and responsible investing are key to achieving sustainable growth in today's competitive environment.",
+      "For businesses, investors and strategic partners, identifying opportunities with genuine long-term potential requires more than following market trends. It requires careful analysis, responsible decision-making and a clear understanding of how industries are changing.",
+      "At Monarch Global Investments, our approach focuses on strategic planning, innovation, sustainable business development and long-term value creation. Across our core sectors of Education, Agriculture, Energy and Tourism, we continue to explore developments capable of shaping tomorrow's businesses and communities."
     ],
 
-    trends: [
-      {
-        title: "Sustainable Investments",
-        description:
-          "Environmental, social, and governance (ESG) principles continue to influence investment decisions. Businesses prioritizing sustainability are attracting greater investor confidence and creating long-term value.",
-      },
-
-      {
-        title: "Digital Transformation",
-        description:
-          "Technology remains one of the strongest drivers of business growth. Artificial intelligence, cloud computing, automation, and data analytics are transforming industries and opening new investment opportunities.",
-      },
-
-      {
-        title: "Renewable Energy",
-        description:
-          "Global demand for clean and renewable energy continues to rise. Investments in solar, wind, and energy infrastructure are expected to play a significant role in future economic development.",
-      },
-
-      {
-        title: "Smart Agriculture",
-        description:
-          "Innovative farming technologies such as aquaponics, precision agriculture, and sustainable food production are helping address global food security while improving operational efficiency.",
-      },
-
-      {
-        title: "Education Innovation",
-        description:
-          "Digital learning platforms, skill development programs, and education technology continue to expand, creating new opportunities for investment and long-term societal impact.",
-      },
+   trends: [
+  {
+    title: "Sustainable Investments",
+    description: [
+      "Sustainability continues to influence corporate strategy and long-term investment decisions worldwide.",
+      "Businesses are increasingly considering environmental responsibility, efficient resource utilisation, responsible governance and long-term social and economic impact as part of their growth strategies.",
+      "For investment and holding companies, this creates opportunities to support businesses that combine commercial potential with responsible development.",
+      "At Monarch Global Investments, sustainability remains an important consideration when evaluating businesses, partnerships and emerging opportunities.",
     ],
+  },
+
+  {
+    title: "Digital Transformation & Artificial Intelligence",
+    description: [
+      "Technology continues to transform how organisations operate, compete and scale.",
+      "Artificial intelligence, automation, cloud technologies, digital platforms and data analytics are enabling businesses to improve operational efficiency, strengthen decision-making and develop new products and services.",
+      "Digital transformation is no longer limited to technology companies. Agriculture, education, tourism, energy and traditional industries are increasingly integrating technology into their operations.",
+      "For Monarch Global Investments, understanding these technological shifts is an important part of identifying future-focused business opportunities.",
+    ],
+  },
+
+  {
+    title: "Renewable & Future-Focused Energy",
+    description: [
+      "The transition toward cleaner, more efficient and sustainable energy systems continues to create significant opportunities worldwide.",
+      "Developments in renewable energy, solar technologies, energy infrastructure, efficiency solutions and emerging clean-energy technologies are changing how governments, businesses and communities approach future energy requirements.",
+      "Monarch Global Investments continues to explore opportunities and strategic partnerships that align innovation with responsible and sustainable energy development.",
+    ],
+  },
+
+  {
+    title: "Smart & Sustainable Agriculture",
+    description: [
+      "Agriculture is undergoing a significant transformation as technology and sustainability become increasingly integrated into food production and resource management.",
+      "Solutions such as precision agriculture, aquaponics, controlled-environment farming, agricultural automation and data-driven farming can help improve productivity while addressing challenges related to food security and resource efficiency.",
+      "Investment in agricultural innovation can therefore contribute to both economic opportunity and long-term sustainable development.",
+      "Through its agriculture-focused initiatives and strategic ecosystem, Monarch Global Investments aims to support opportunities capable of strengthening the future of sustainable agriculture.",
+    ],
+  },
+
+  {
+    title: "Education & Skills Innovation",
+    description: [
+      "Education continues to evolve as technology changes how people learn, develop skills and prepare for future employment.",
+      "Digital learning platforms, education technology, professional training, skill-development programmes and innovative learning models are expanding access to knowledge while creating new opportunities for education-focused businesses.",
+      "Monarch Global Investments views education as an important component of long-term economic and social development, particularly where innovation can improve accessibility, skills and future readiness.",
+    ],
+  },
+],
+beyond: {
+  title: "Investing in Long-Term Transformation",
+  paragraphs: [
+    "The strongest opportunities are not always created by short-term market movements. They often emerge from structural changes that transform industries over many years.",
+    "At Monarch Global Investments, we believe effective investment decisions begin with understanding these changes early, evaluating their long-term potential and building the right partnerships to turn opportunities into sustainable businesses.",
+    "Our focus on Education, Agriculture, Energy and Tourism enables us to explore opportunities across sectors that contribute directly to economic development, innovation and sustainable progress.",
+    "Through careful analysis, strategic partnerships and disciplined execution, Monarch Global Investments aims to participate in building businesses prepared for the future.",
+  ],
+  closing: "Analyse the Opportunity. Build the Strategy. Create Sustainable Value.",
+},
   },
 
   {
@@ -77,13 +130,15 @@ export const news = [
     trends: [
       {
         title: "Solar Energy",
-        description:
+        description:[
           "Solar energy continues to expand as technology improves and demand for clean energy increases.",
+        ]
       },
       {
         title: "Wind Energy",
-        description:
+        description:[
           "Wind power is becoming an important part of global renewable energy infrastructure.",
+        ]
       },
     ],
   },
@@ -112,13 +167,15 @@ export const news = [
     trends: [
       {
         title: "Smart Farming",
-        description:
+        description:[
           "Technology-driven farming systems are improving productivity and resource efficiency.",
+        ]
       },
       {
         title: "Aquaponics",
-        description:
+        description:[
           "Aquaponics provides an efficient approach to sustainable food production while reducing resource consumption.",
+        ]
       },
     ],
   },
@@ -147,13 +204,15 @@ export const news = [
     trends: [
       {
         title: "Digital Learning",
-        description:
+        description:[
           "Digital learning platforms are expanding access to education and creating new opportunities for learners.",
+        ]
       },
       {
         title: "Future Skills",
-        description:
+        description:[
           "Skill development programs are helping prepare students and professionals for an increasingly digital economy.",
+        ]
       },
     ],
   },

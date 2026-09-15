@@ -4,24 +4,35 @@ import Image from "next/image";
 
 const features = [
   {
-    title: "Diversified Investment Portfolio",
+    title: "Diversified Investment Focus",
     description:
-      "Our investments span multiple industries, reducing risk while creating long-term growth opportunities.",
+      "Our interests span multiple high-potential sectors, including Education, Agriculture, Energy and Tourism, creating opportunities for cross-sector collaboration, diversification and sustainable business development.",
   },
   {
     title: "Sustainable Investment Strategy",
     description:
-      "We prioritise investments that generate lasting economic, environmental, and social value.",
+      "Sustainability is integrated into our long-term strategy. We support businesses and initiatives designed to generate meaningful economic value while considering environmental responsibility and positive social impact.",
   },
   {
     title: "Strategic Partnerships",
     description:
-      "We collaborate with trusted organisations and industry leaders to maximise investment potential.",
+      "We collaborate with entrepreneurs, businesses, specialists, organisations and strategic partners to combine complementary expertise, market access, operational capabilities and international networks.",
   },
-  {
+{
     title: "Long-Term Value Creation",
-    description:
-      "Our focus is on building sustainable businesses that deliver consistent growth over time.",
+    description: (
+      <>
+        Our philosophy prioritises strong foundations and sustainable business
+        development over short-term growth. We focus on opportunities capable
+        of generating lasting value for businesses, partners, stakeholders and
+        communities.
+        <br />
+        
+        This closely follows the four investment propositions already
+        established in your PDF—diversification, sustainability, partnerships
+        and long-term value creation.
+      </>
+    ),
   },
 ];
 
@@ -33,18 +44,19 @@ export default function WhyInvest() {
           {/* Left */}
           <div>
             <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
-              Why Invest
+         Why Monarch
+
             </span>
 
             <h2 className="mt-4 max-w-[720px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-              Why Invest with
-              <br />
-              Monarch Investments
+            Why Partner with 
+              
+             Monarch Global Investments?
             </h2>
 
             <div className="relative mt-8 h-[300px] overflow-hidden rounded-[12px] sm:h-[400px] lg:h-[400px]">
               <Image
-                src="/home/hero.png"
+                src="/Investment/WhyMonarch.png"
                 alt="Why Invest"
                 fill
                 priority

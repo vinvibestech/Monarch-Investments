@@ -32,7 +32,7 @@ export default function Hero() {
             {/* Main Content */}
             <div className="relative z-20 flex h-full items-start lg:items-center pt-28 lg:pt-0">
                 <div className="mx-auto w-full w-7xl px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24">
-                    <h1 className="w-5xl text-3xl leading-tight font-bold text-white sm:text-4xl md:text-4xl lg:text-[56px] lg:leading-[1.05]">
+                    <h1 className="xl:w-5xl text-3xl leading-tight font-bold text-white sm:text-4xl md:text-4xl lg:text-[56px] lg:leading-[1.05]">
                         Building Sustainable
                         <br />
                         Growth Through Strategic Investments

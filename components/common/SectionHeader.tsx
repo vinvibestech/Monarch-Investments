@@ -14,7 +14,7 @@ export default function SectionHeader({
   title,
   description,
   className = "",
-  titleWidth = "max-w-[720px]",
+  titleWidth = "max-w-[850px]",
   descriptionWidth = "max-w-[1280px]",
 }: SectionHeaderProps) {
   return (
