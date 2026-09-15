@@ -16,13 +16,13 @@ export default function page() {
                 title="Sustainable Farming for a Greener Tomorrow"
                 description="Monarch Global Investments supports innovative aquaponics and sustainable farming solutions that integrate aquaculture with hydroponic cultivation to produce fresh crops through an efficient, resource-conscious growing ecosystem."
                 tagLine="Innovative food production. Smarter water use. Sustainable growth."
-                image="/Investment/InvestmentInformation.png"
+                image="/Aquaponics/AquaponicsSolutions.png"
             />
-     <AboutAquaponics/>
+            <AboutAquaponics />
             <WhyChooseAquaponics />
             <AquaponicsProducts />
             <Applications />
-            <SustainableAgriculture/>
+            <SustainableAgriculture />
             <Footer />
         </>
     );

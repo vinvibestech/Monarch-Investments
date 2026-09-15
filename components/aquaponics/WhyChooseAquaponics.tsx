@@ -7,25 +7,25 @@ const features = [
     title: "Fresh & Healthy Produce",
     description:
       "Aquaponics can support the cultivation of fresh vegetables, herbs and leafy greens within controlled growing environments, helping maintain consistent growing conditions and product quality.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/FreshHealthy.png",
   },
   {
     title: "Water Efficient",
     description:
       "Because water is continuously circulated through the growing system, aquaponics can substantially reduce water consumption compared with many conventional farming methods.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/WaterEfficient.png",
   },
   {
     title: "Resource-Efficient System",
     description:
       "The integration of fish and plant production creates a connected ecosystem designed to reuse nutrients and water efficiently while reducing waste.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/ResourceEfficient.png",
   },
   {
     title: "Sustainable Food Production",
     description:
       "Aquaponics offers an alternative approach to food production that can support local agriculture, responsible resource management and long-term food-security initiatives.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/SustainableFood.png",
   },
 ];
 

@@ -7,28 +7,28 @@ const products = [
     title: "Hydroponic Growing Solutions",
     description:
       "Efficient growing solutions designed to support the cultivation of vegetables, herbs and leafy greens in soil-free environments.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/Hydroponic.png",
 
   },
   {
     title: "Complete Aquaponics Systems",
     description:
       "Integrated aquaculture and hydroponic systems designed to create an efficient environment for sustainable food production.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/CompleteAquaponics.png",
 
   },
   {
     title: "Fish Farming Equipment",
     description:
       "Essential equipment and system components designed to support fish cultivation and help maintain a balanced aquaponics environment.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/FishFarming.png",
 
   },
   {
     title: "Farming Accessories",
     description:
       "Supporting tools, components and accessories for system installation, operation, maintenance and optimisation.",
-    image: "/home/hero.png",
+    image: "/Aquaponics/FreshHealthy.png",
 
   },
 ];
