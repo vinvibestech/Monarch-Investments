@@ -12,17 +12,17 @@ export default function page() {
             <Highlight
                 label="Blog & News"
                 title="Insights That Drive Smarter Decisions"
-                description="Stay informed with the latest company updates, investment trends, industry news, and expert insights across Education, Tourism, Energy, and Agriculture."
+                description="Stay informed with the latest investment insights, business developments, industry trends and company updates from Monarch Global Investments across Education, Agriculture, Energy and Tourism."
                 tagLine=""
-                image="/home/hero.png"
+                image="/blognews/newsblog.png"
             />
             <SectionHeader
                 label="Introduction"
                 title="Explore Our Latest Stories"
-                description="Our Blog & News section keeps you updated with valuable insights, market developments, and company announcements. Discover expert perspectives that help businesses, investors, and professionals stay ahead in a rapidly evolving world."
+                description="Our Blog & News section brings you valuable insights, market developments and company updates. Discover perspectives on investment, innovation, sustainability and global business to stay informed in a rapidly evolving world."
             />
             <LatestNews
-                limit={4}
+                limit={6}
                 source="blog"
             />
             <Footer />

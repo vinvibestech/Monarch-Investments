@@ -16,9 +16,9 @@ export default function page() {
             <Highlight
                 label="Contact Us"
                 title="Let's Start a Conversation"
-                description="Whether you're looking for investment opportunities, business partnerships, or have a general enquiry, our team is here to help. Get in touch and let's build a successful future together."
+                description="Whether you are exploring investment opportunities, business partnerships, strategic collaborations or general enquiries, the Monarch Global Investments team is ready to assist you. Connect with us to discuss your requirements and explore opportunities for sustainable growth."
                 tagLine=""
-                image="/home/hero.png"
+                image="/contactUs/contactUs.png"
             />
             <ContactUs />
             <ContactSection />

@@ -12,14 +12,14 @@ export default function page() {
             <Highlight
                 label="Gallery & Testimonials"
                 title="Showcasing Our Journey & Success Stories"
-                description="Explore moments that reflect our commitment to innovation, strategic partnerships, and sustainable growth while hearing from those who have worked with Monarch Investments."
+                description="Explore moments that reflect Monarch Global Investments’ commitment to innovation, strategic partnerships and sustainable growth, while hearing from clients, investors and business partners who have experienced our approach."
                 tagLine=""
                 image="/home/hero.png"
             />
             <SectionHeader
                 label="Gallery Overview"
                 title="Capturing Our Milestones"
-                description="Our gallery highlights key moments from business events, strategic partnerships, industry initiatives, and projects across Education, Tourism, Energy, and Agriculture."
+                description="Our gallery highlights key moments from corporate events, strategic partnerships, investment projects, industry initiatives and community engagement across Education, Tourism, Energy and Agriculture."
             />
             <GalleryCategories />
             <Testimonials />

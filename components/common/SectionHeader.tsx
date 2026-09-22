@@ -18,7 +18,7 @@ export default function SectionHeader({
   descriptionWidth = "max-w-[1280px]",
 }: SectionHeaderProps) {
   return (
-    <section id="newssection" className={`${className} bg-white py-14 sm:py-16 lg:py-20 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26` }>
+    <section id="newssection" className={`${className} bg-white py-14 sm:py-16 lg:py-17 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26` }>
       <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
         {label}
       </span>

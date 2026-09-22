@@ -11,28 +11,28 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     quote:
-      '"Monarch Investments has been a trusted partner throughout our growth journey. Their strategic insights and professional approach have helped us achieve long-term success."',
+      '“Monarch Global Investments has been a trusted partner throughout our growth journey. Their strategic insights and professional approach have supported our long-term business goals.”',
     name: "Sarah Johnson",
     role: "Business Partner",
   },
   {
     id: 2,
     quote:
-      '"The team\'s commitment to transparency and sustainable investments gave us the confidence to build a lasting partnership with Monarch Investments."',
+      '“The team’s commitment to transparency and sustainable investment gave us confidence in building a long-term partnership with Monarch Global Investments.”',
     name: "Ahmed Al Mansoori",
     role: "Investor",
   },
   {
     id: 3,
     quote:
-      '"Their expertise, reliability, and innovative thinking made every stage of our collaboration smooth and successful. We highly recommend Monarch Investments."',
+      '“Their expertise, reliability and innovative approach made every stage of our collaboration smooth and well-structured.”',
     name: "Priya Nair",
     role: "Corporate Client",
   },
   {
     id: 4,
     quote:
-      '"Monarch Investments delivers trusted expertise, transparency, and sustainable solutions for long-term business growth."',
+      '“Monarch Global Investments provides trusted expertise, transparency and sustainable solutions focused on long-term business growth.”',
     name: "Michael Anderson",
     role: "Strategic Business Partner",
   },
@@ -56,9 +56,7 @@ export default function Testimonials() {
             </h2>
 
             <p className="mt-5 max-w-[600px] text-base leading-8 text-[#1A1A1A] sm:text-lg lg:text-[20px] lg:leading-[2]">
-              Hear from our valued clients and partners who have experienced
-              the professionalism, expertise, and commitment of Monarch
-              Investments.
+              Hear from clients, investors and strategic business partners who have experienced Monarch Global Investments’ professional approach, strategic expertise, transparency and commitment to sustainable growth.
             </p>
           </div>
 
@@ -92,6 +90,35 @@ export default function Testimonials() {
 
         </div>
       </div>
+
+      <section id="newssection" className={`bg-white py-14 sm:py-16 lg:py-20 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26`}>
+
+        <h2
+          className={`mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
+        >
+          Building Connections. Creating Opportunities. Growing Together.
+
+
+        </h2>
+
+        <div className={`mt-5 lg:mt-5`}>
+          <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            Monarch Global Investments brings together investment, innovation, strategic partnerships and sustainable development across Education, Agriculture, Energy and Tourism.
+
+
+          </p>
+        </div>
+        <div className={`mt-2 lg:mt-2`}>
+          <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            Explore our journey, discover our milestones and connect with us to explore new opportunities for collaboration and growth.
+
+
+
+          </p>
+        </div>
+
+      </section>
+
     </section>
   );
 }

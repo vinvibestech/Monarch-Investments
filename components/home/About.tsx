@@ -12,19 +12,18 @@ export default function About() {
           {/* Left */}
           <div>
             <span className="text-base font-medium text-black sm:text-lg lg:text-[16px]">
-              About us
+              About Monarch Global Investments
             </span>
 
             <h2 className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-              Building Sustainable Growth Through Strategic Investments
+              Creating Opportunities. Building Long-Term Value.
             </h2>
 
             <p className="mt-6 w-full max-w-[620px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]">
-              Monarch Investments is a diversified investment company focused
-              on Education, Tourism, Energy, and Agriculture. We create
-              sustainable opportunities through innovation, strategic
-              partnerships, and responsible investments that deliver long-term
-              value.
+        Monarch Global Investments brings together diverse sectors under a strategic investment platform focused on sustainable growth and responsible business practices.
+        <br/>
+   
+        Our approach combines industry expertise, strategic partnerships, innovation and responsible investment to identify opportunities across key sectors and support long-term economic and social development.
             </p>
 
             <Link
@@ -39,7 +38,7 @@ export default function About() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative aspect-[4/3] w-full max-w-[560px] overflow-hidden rounded-[12px]">
               <Image
-                src="/home/hero.png"
+                src="/home/aboutus.png"
                 alt="Building"
                 fill
                 className="object-cover"

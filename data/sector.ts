@@ -1,26 +1,26 @@
 export const sectors = [
   {
     label: "Agriculture",
-    image: "/home/hero.png",
+    image: "/home/Agriculture.png",
     description:
-      "We invest in modern agriculture and sustainable farming practices that enhance productivity and food security. Our solutions support long-term environmental and economic growth.",
+      "We invest in modern agriculture and sustainable farming practices that support productivity, food security and long-term environmental and economic growth.",
   },
   {
     label: "Energy",
-    image: "/home/energy.jpg",
+    image: "/home/Energy.png",
     description:
-      "We back energy projects that balance reliability with sustainability, helping build infrastructure that powers growth for generations to come.",
+      "We support clean energy solutions and sustainable initiatives that contribute to a more resilient and environmentally responsible future.",
   },
   {
-    label: "Real Estate",
-    image: "/home/real-estate.jpg",
+    label: "Education",
+    image: "/home/Education.png",
     description:
-      "We develop and invest in real estate that shapes communities, blending design, functionality, and long-term value creation.",
+      "We support quality education, innovative learning opportunities and initiatives that help build knowledge, skills and future generations.",
   },
   {
-    label: "Technology",
-    image: "/home/technology.jpg",
+    label: "Tourism",
+    image: "/home/Tourism.png",
     description:
-      "We support technology ventures that drive innovation and efficiency across industries, positioning our partners for the future.",
+      "We explore opportunities that connect cultures, support communities and contribute to sustainable tourism development.",
   },
 ];

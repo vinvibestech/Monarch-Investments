@@ -18,7 +18,7 @@ export default function ContactSection() {
               </h3>
 
               <p className="mt-4 text-lg leading-8 text-[#111] sm:text-xl lg:text-[18px]">
-                Dubai, United Arab Emirates
+              Dubai, United Arab Emirates
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function ContactSection() {
               </h3>
 
               <p className="mt-4 break-words text-lg leading-8 text-[#111] sm:text-xl lg:text-[18px]">
-                info@monarchinvestments.com
+              info@monarchinvestments.com
               </p>
             </div>
 

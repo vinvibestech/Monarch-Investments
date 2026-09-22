@@ -26,12 +26,12 @@ export const news: NewsArticleData[] = [
   {
     id: 1,
     year: "2026",
-    title: "Strategic Investment Trends",
+    title: "Strategic Investment Trends Shaping Global Business",
 
     description:
-      "The global business and investment landscape continues to evolve as sustainability, emerging technologies, digital transformation and changing economic priorities reshape industries worldwide.",
+      "Explore emerging investment trends, strategic opportunities and market developments shaping the future of global business.",
 
-    image: "/home/hero.png",
+    image: "/blognews/GlobalBusiness.png",
 
     publishedDate:"January 15, 2026",
     category: "Investment Insights",
@@ -112,9 +112,9 @@ beyond: {
     title: "The Future of Renewable Energy",
 
     description:
-      "Discover how clean energy investments are driving sustainable growth and long-term value.",
+      "Discover how renewable energy and sustainable solutions are creating new opportunities for long-term economic and environmental growth.",
 
-    image: "/news/news2.jpg",
+    image: "/blognews/RenewableEnergy.png",
 
     publishedDate: "February 10, 2026",
     category: "Energy",
@@ -149,9 +149,9 @@ beyond: {
     title: "Innovation in Modern Agriculture",
 
     description:
-      "Learn how smart farming and aquaponics are transforming sustainable food production.",
+      "Explore how smart farming, aquaponics and agricultural innovation are transforming sustainable food production.",
 
-    image: "/news/news3.jpg",
+    image: "/blognews/ModernAgriculture.png",
 
     publishedDate: "March 5, 2026",
     category: "Agriculture",
@@ -183,12 +183,84 @@ beyond: {
   {
     id: 4,
     year: "2026",
-    title: "Transforming Education",
+    title: "Transforming Education Through Innovation",
 
     description:
-      "Discover how innovative learning solutions are shaping the future of education and empowering the next generation.",
+      "Discover how innovative learning solutions and new approaches to education are creating opportunities for the next generation.",
 
-    image: "/news/news4.jpg",
+    image: "/blognews/TransformingEducation.png",
+
+    publishedDate: "April 12, 2026",
+    category: "Education",
+    author: "Investment Research Department",
+    company: "Monarch Investments",
+
+    content: [
+      "Education continues to evolve through innovative learning models, technology, and new approaches to developing future-ready skills.",
+
+      "We believe investment in education plays an important role in empowering individuals and contributing to long-term economic development.",
+    ],
+
+    trends: [
+      {
+        title: "Digital Learning",
+        description:[
+          "Digital learning platforms are expanding access to education and creating new opportunities for learners.",
+        ]
+      },
+      {
+        title: "Future Skills",
+        description:[
+          "Skill development programs are helping prepare students and professionals for an increasingly digital economy.",
+        ]
+      },
+    ],
+  },
+  {
+    id: 5,
+    year: "2026",
+    title: "Building a Connected Global Business Platform",
+
+    description:
+      "Discover how Monarch Global Investments brings together businesses, strategic partnerships and opportunities across diverse industries and markets.",
+
+    image: "/blognews/BuildingConnected.png",
+
+    publishedDate: "April 12, 2026",
+    category: "Education",
+    author: "Investment Research Department",
+    company: "Monarch Investments",
+
+    content: [
+      "Education continues to evolve through innovative learning models, technology, and new approaches to developing future-ready skills.",
+
+      "We believe investment in education plays an important role in empowering individuals and contributing to long-term economic development.",
+    ],
+
+    trends: [
+      {
+        title: "Digital Learning",
+        description:[
+          "Digital learning platforms are expanding access to education and creating new opportunities for learners.",
+        ]
+      },
+      {
+        title: "Future Skills",
+        description:[
+          "Skill development programs are helping prepare students and professionals for an increasingly digital economy.",
+        ]
+      },
+    ],
+  },
+  {
+    id: 6,
+    year: "2026",
+    title: "Strategic Partnerships & Global Opportunities",
+
+    description:
+      "Explore how strategic partnerships and business alliances can create opportunities for collaboration, innovation and sustainable growth.",
+
+    image: "/blognews/StrategicPartnerships.png",
 
     publishedDate: "April 12, 2026",
     category: "Education",

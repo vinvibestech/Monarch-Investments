@@ -20,7 +20,7 @@ export default function ServicesSection() {
             </span>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-              Comprehensive Business &
+             Comprehensive Business &
               <br />
               Investment Solutions
             </h2>
@@ -28,9 +28,7 @@ export default function ServicesSection() {
 
           <div>
             <p className="max-w-[560px] text-base mt-5 leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
-              Monarch Investments offers strategic services designed to support
-              business growth, investment planning, and sustainable development
-              through expert guidance and trusted partnerships.
+Monarch Global Investments offers strategic services that support business growth, investment planning, market analysis and sustainable development through expert guidance and trusted partnerships.
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ export const galleryCategories: GalleryCategory[] = [
     slug: "corporate-events",
     title: "Corporate Events",
     description:
-      "Highlights from conferences, meetings, and business events.",
+      "Explore highlights from conferences, business meetings, corporate gatherings and industry events that reflect Monarch Global Investments’ business activities and professional network.",
     coverImage: "/home/hero.png",
 
     images: [
@@ -54,7 +54,7 @@ export const galleryCategories: GalleryCategory[] = [
     slug: "strategic-partnerships",
     title: "Strategic Partnerships",
     description:
-      "Celebrating successful collaborations and long-term partnerships.",
+      "Discover moments from collaborations, strategic alliances and business partnerships that support innovation, sustainable growth and new opportunities.",
     coverImage: "/gallery/strategic-partnerships/1.jpg",
 
     images: [
@@ -82,7 +82,7 @@ export const galleryCategories: GalleryCategory[] = [
     slug: "investment-projects",
     title: "Investment Projects",
     description:
-      "A showcase of our projects and business initiatives across multiple sectors.",
+      "Explore selected projects, business initiatives and investment activities across multiple sectors, reflecting Monarch Global Investments’ focus on long-term development and sustainable opportunities.",
     coverImage: "/gallery/investment-projects/1.jpg",
 
     images: [
@@ -110,7 +110,7 @@ export const galleryCategories: GalleryCategory[] = [
     slug: "community-engagement",
     title: "Community Engagement",
     description:
-      "Supporting communities through sustainable development and social initiatives.",
+      "View initiatives focused on community development, sustainability and meaningful social impact across the sectors and markets we serve.",
     coverImage: "/gallery/community-engagement/1.jpg",
 
     images: [
