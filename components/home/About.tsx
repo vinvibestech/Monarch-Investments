@@ -2,83 +2,188 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion, type Variants } from "framer-motion";
+
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 45,
+    filter: "blur(6px)",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const imageReveal: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.92,
+    y: 40,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const statsData = [
+  {
+    label: "Investment Value",
+    value: "AED 500M+",
+  },
+  {
+    label: "Investors",
+    value: "250+",
+  },
+  {
+    label: "Partner Companies",
+    value: "50+",
+  },
+];
 
 export default function About() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-28">
-      <div className="mx-auto w-full w-7xl px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24">
-        {/* Top */}
-        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
-          {/* Left */}
-          <div>
-            <span className="text-base font-medium text-black sm:text-lg lg:text-[16px]">
-              About Monarch Global Investments
-            </span>
+    <section className="overflow-hidden py-16 sm:py-20 lg:py-28">
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 md:px-12 lg:px-20 xl:px-24">
 
-            <h2 className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
-              Creating Opportunities. Building Long-Term Value.
-            </h2>
+        {/* Top Section */}
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
 
-            <p className="mt-6 w-full max-w-[620px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]">
-        Monarch Global Investments brings together diverse sectors under a strategic investment platform focused on sustainable growth and responsible business practices.
-        <br/>
-   
-        Our approach combines industry expertise, strategic partnerships, innovation and responsible investment to identify opportunities across key sectors and support long-term economic and social development.
-            </p>
-
-            <Link
-              href="/about"
-              className="mt-8 inline-flex h-14 w-40 items-center justify-center rounded-full border border-black text-black text-lg font-medium hover:bg-black hover:text-white sm:h-16 sm:w-48 sm:text-xl lg:mt-16 lg:h-[63px] lg:w-[170px] lg:text-[20px]"
+          {/* Left Content */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+          >
+            {/* Subheading */}
+            <motion.span
+              variants={fadeUp}
+              className="block text-base font-medium text-[#F5F7FA] sm:text-lg lg:text-[16px]"
             >
-              About Us
-            </Link>
-          </div>
+              About Monarch Global Investments
+            </motion.span>
 
-          {/* Right */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative aspect-[4/3] w-full max-w-[560px] overflow-hidden rounded-[12px]">
+            {/* Heading */}
+            <motion.h2
+              variants={fadeUp}
+              className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight text-[#F5F7FA] sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+            >
+              Creating Opportunities. Building Long-Term Value.
+            </motion.h2>
+
+            {/* Description */}
+            <motion.p
+              variants={fadeUp}
+              className="mt-6 w-full max-w-[620px] text-base leading-7 text-[#F5F7FA] sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
+            >
+              Monarch Global Investments brings together diverse sectors under
+              a strategic investment platform focused on sustainable growth
+              and responsible business practices.
+
+              <br />
+              <br />
+
+              Our approach combines industry expertise, strategic partnerships,
+              innovation and responsible investment to identify opportunities
+              across key sectors and support long-term economic and social
+              development.
+            </motion.p>
+
+            {/* Button */}
+            <motion.div
+              variants={fadeUp}
+              className="mt-8 lg:mt-16"
+            >
+              <Link
+                href="/about"
+                className="inline-flex h-14 w-40 items-center justify-center rounded-full border border-[#F5F7FA] text-lg font-medium text-[#F5F7FA] transition-all duration-300 hover:bg-[#F5F7FA] hover:text-black sm:h-16 sm:w-48 sm:text-xl lg:h-[63px] lg:w-[170px] lg:text-[20px]"
+              >
+                About Us
+              </Link>
+            </motion.div>
+          </motion.div>
+
+          {/* Right Image */}
+          <motion.div
+            variants={imageReveal}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: false,
+              amount: 0.2,
+            }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="group relative aspect-[4/3] w-full max-w-[560px] overflow-hidden rounded-[12px]">
               <Image
-                src="/home/aboutus.png"
-                alt="Building"
+                src="/home/aboutu.png"
+                alt="Monarch Global Investments"
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Bottom Stats */}
-        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-28 lg:grid-cols-3">
-          <div className="text-center">
-            <p className="text-lg text-black sm:text-xl lg:text-[24px]">
-              Investment Value
-            </p>
+        {/* Bottom Statistics */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{
+            once: false,
+            amount: 0.2,
+          }}
+          className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:mt-28 lg:grid-cols-3"
+        >
+          {statsData.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              variants={fadeUp}
+              className={`text-center ${
+                index === 2 ? "sm:col-span-2 lg:col-span-1" : ""
+              }`}
+            >
+              <p className="text-lg text-[#F5F7FA] sm:text-xl lg:text-[24px]">
+                {stat.label}
+              </p>
 
-            <h3 className="mt-4 text-4xl text-black font-semibold sm:text-5xl lg:mt-8 lg:text-[56px]">
-              AED 500M+
-            </h3>
-          </div>
+              <motion.h3
+                variants={fadeUp}
+                className="mt-4 text-4xl font-semibold text-[#F5F7FA] sm:text-5xl lg:mt-8 lg:text-[56px]"
+              >
+                {stat.value}
+              </motion.h3>
+            </motion.div>
+          ))}
+        </motion.div>
 
-          <div className="text-center">
-            <p className="text-lg text-black sm:text-xl lg:text-[24px]">
-              Investors
-            </p>
-
-            <h3 className="mt-4 text-4xl font-semibold text-black sm:text-5xl lg:mt-8 lg:text-[56px]">
-              250+
-            </h3>
-          </div>
-
-          <div className="text-center sm:col-span-2 lg:col-span-1">
-            <p className="text-lg text-black sm:text-xl lg:text-[24px]">
-              Partner Companies
-            </p>
-
-            <h3 className="mt-4 text-4xl text-black font-semibold sm:text-5xl lg:mt-8 lg:text-[56px]">
-              50+
-            </h3>
-          </div>
-        </div>
       </div>
     </section>
   );

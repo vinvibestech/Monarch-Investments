@@ -25,9 +25,10 @@ const resources = [
 ];
 
 const social = [
-  { name: "Facebook", href: "#" },
-  { name: "LinkedIn", href: "#" },
-  { name: "Instagram", href: "#" },
+  { name: "Facebook", href: "https://www.facebook.com/monarchinvestmentsglobal/" },
+   { name: "Instagram", href: "https://www.instagram.com/monarchinvestmentsglobal/" },
+  { name: "Youtube", href: "https://www.youtube.com/@Monarchinvestmentsglobal" },
+ 
 ];
 
 export default function Footer() {
@@ -110,8 +111,8 @@ export default function Footer() {
 
             <div className="mt-5 space-y-4 text-base text-white/85 sm:text-lg lg:mt-6 lg:space-y-5 lg:text-[19px]">
               <p>Dubai, UAE</p>
-              <p>+971 XX XXX XXXX</p>
-              <p>info@gmail.com</p>
+     
+              <p>monarchinvestmentsglobal@gmail.com</p>
             </div>
           </div>
 
