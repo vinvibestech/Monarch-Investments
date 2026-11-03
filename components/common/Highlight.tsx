@@ -22,15 +22,15 @@ export default function Highlight({
   className = "",
 }: AboutHighlightProps) {
   return (
-    <section className={`bg-white pt-30 sm:pt-34 lg:pt-38 ${className}`}>
+    <section className={`pt-30 sm:pt-34 lg:pt-38 ${className}`}>
       <div className="mx-auto w-full">
         {/* Heading */}
-        <div className="px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24">
-          <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
+        <div className="px-5 sm:px-8 md:px-12 lg:px-16 xl:px-30">
+          <span className="text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]">
             {label}
           </span>
 
-          <h2 className="mt-3 max-w-[760px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.2]">
+          <h2 className="mt-3 max-w-[760px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.2]">
             {title}
           </h2>
         </div>
@@ -47,14 +47,14 @@ export default function Highlight({
         </div>
 
         {/* Description */}
-        <div className="mt-8 flex justify-start px-5 sm:px-8 md:px-12 lg:mt-12 lg:justify-end lg:px-16 xl:px-24">
-          <div className="max-w-[620px]">
-            <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+        <div className="mt-8 flex justify-start px-5 sm:px-8 md:px-12 lg:mt-12  lg:px-16 xl:px-30">
+          <div className="max-w-[1230px]">
+            <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               {description}
             </p>
             {tagLine && (
-              <div className="mt-8 border-t border-black/10 pt-6">
-                <p className="text-lg font-semibold tracking-tight text-black sm:text-lg lg:text-[20px]">
+              <div className=" pt-6">
+                <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
                   {tagLine}
                 </p>
               </div>

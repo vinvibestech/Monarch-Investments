@@ -11,10 +11,10 @@ export default function page() {
         <>
             <Highlight
                 label="Services & Products"
-                title="Strategic Solutions for Sustainable Growth"
-                description="Monarch Global Investments provides strategic investment solutions, business support and innovative products designed to create long-term value across Education, Tourism, Energy and Agriculture."
-                tagLine=""
-                image="/service/BlogNews.png"
+                title="Opportunities Across Industries. Solutions for Tomorrow."
+                description="Monarch Global Investments brings together diverse business interests, industry expertise and strategic opportunities across key sectors. Through our diversified portfolio, we focus on developing meaningful business solutions, fostering partnerships and supporting sustainable growth."
+                tagLine="Explore our sectors, discover our areas of activity and connect with us to explore potential collaborations."
+                image="/service/servicepage.png"
             />
             <ServicesSection />
             <ProductsSection />

@@ -11,7 +11,7 @@ const menuItems = [
   {
     label: "About Us",
     href: "/about",
-    image: "/home/hero.png",
+    image: "/navbar/aboutimage.png",
   },
   {
     label: "Services & Products",

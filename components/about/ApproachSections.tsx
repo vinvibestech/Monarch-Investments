@@ -22,7 +22,7 @@ const sections: ApproachSectionProps[] = [
       "Our approach combines market insight, strategic planning, partnerships, innovation, and disciplined execution to transform opportunities into sustainable businesses.",
       "We believe lasting growth is not created through short-term decisions. It is built through strong foundations, continuous improvement, responsible leadership, and carefully planned expansion.",
     ],
-    image: "/about/OurApproach.png",
+    image: "/about/OurApproachs.png",
     imageAlt: "Our Approach",
     hero: true,
   },
@@ -30,11 +30,10 @@ const sections: ApproachSectionProps[] = [
     label: "Strategic Partnerships & Alliances",
     title: "Connecting Expertise. Creating Opportunity.",
     paragraphs: [
-      "Strategic partnerships are an important part of Monarch Global Investments’ growth model.",
-      "Where appropriate, we collaborate with businesses, entrepreneurs, specialists, investors, and organisations through strategic alliances, contractual partnerships, and joint ventures.",
-      "By connecting complementary expertise, market access, operational capabilities, and international networks, we aim to create mutually beneficial relationships capable of generating sustainable long-term value.",
+      "We believe meaningful growth is built through strong partnerships. Monarch Global Investments collaborates with businesses, entrepreneurs, investors and industry specialists to unlock opportunities across markets.",
+      "Through strategic alliances, joint ventures and international networks, we bring together complementary expertise and resources to create sustainable, mutually beneficial growth.",
     ],
-    image: "/about/Partnerships.png",
+    image: "/about/Partnership.png",
     imageAlt: "Strategic Partnerships",
   },
   {
@@ -46,7 +45,7 @@ const sections: ApproachSectionProps[] = [
       "The Monarch ecosystem includes ventures and strategic interests such as Mazra Care, Royal Falcon Innovation, and Royal Falcon Sustainable Tobacco Manufacturing, Export & Import, alongside future businesses and investment initiatives developed under the Monarch Global Investments umbrella.",
       "This integrated structure enables the Group to share expertise, strengthen governance, identify cross-sector opportunities, and build a stronger global presence.",
     ],
-    image: "/about/OurGroup.png",
+    image: "/about/OurGroupss.png",
     imageAlt: "Our Group",
     reverse: true,
   },
@@ -63,7 +62,7 @@ function Content({
   return (
     <div className="w-full">
       {/* Label */}
-      <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
+      <span className="text-sm text-[#C99B45] font-medium sm:text-base lg:text-[16px]">
         {label}
       </span>
 
@@ -75,7 +74,7 @@ function Content({
           text-3xl
           font-semibold
           leading-[1.2]
-          text-black
+         
           sm:mt-4
           sm:text-4xl
           md:text-5xl
@@ -95,7 +94,6 @@ function Content({
             className="
               text-base
               leading-7
-              text-[#1A1A1A]
               sm:text-lg
               sm:leading-8
               md:text-[19px]
@@ -117,12 +115,12 @@ export default function ApproachSections() {
   const group = sections[2];
 
   return (
-    <main className="bg-white">
+    <main className="">
 
       {/* =====================================================
           OUR APPROACH
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+      <section className=" py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto
@@ -191,7 +189,7 @@ export default function ApproachSections() {
       {/* =====================================================
           STRATEGIC PARTNERSHIPS
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+      <section className=" py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto
@@ -258,7 +256,7 @@ export default function ApproachSections() {
       {/* =====================================================
           OUR GROUP
       ===================================================== */}
-      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
+      <section className=" py-14 sm:py-16 md:py-20 lg:py-24">
         <div
           className="
             mx-auto

@@ -11,11 +11,11 @@ export default function page() {
 
         <>
             <Highlight
-                label="About Us"
-                title="Building Sustainable Growth Through Strategic Investments"
-                description="Monarch Global Investments is a diversified investment and holding company focused on building sustainable businesses, strategic partnerships, and long-term value across high-potential sectors."
-                tagLine="Vision. Strategy. Sustainable Growth."
-                image="/about/AboutUsHero.png"
+                label="About Monarch"
+                title="Connecting Vision with Opportunity. Building Value for Tomorrow."
+                description="Monarch Global Investments is a diversified investment platform focused on identifying opportunities, fostering strategic partnerships and supporting sustainable growth across key industries."
+                tagLine="With a forward-looking approach and a commitment to responsible business practices, we bring together vision, expertise and innovation to create meaningful long-term value."
+                image="/about/AboutUsHeros.png"
             />
             <WhoWeAre/>
             <BusinessSectors/>
