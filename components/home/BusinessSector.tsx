@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import {
+  ArrowUpRight,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -106,7 +107,7 @@ export default function BusinessSector() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-20 mx-auto flex h-full min-h-[700px] max-w-[1480px] flex-col justify-between px-5 py-10 sm:px-8 md:px-12 lg:h-[760px] lg:px-16 lg:py-14 xl:px-24">
+      <div className="relative z-20 mx-auto flex h-full min-h-[700px] max-w-[1480px] flex-col justify-between px-5 py-10 sm:px-8 md:px-12 lg:h-[760px] lg:px-16 lg:py-14 xl:px-27">
 
         {/* Top Section */}
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
@@ -126,7 +127,7 @@ export default function BusinessSector() {
                 {/* Label */}
                 <motion.span
                   variants={itemVariants}
-                  className="block text-sm font-medium text-white sm:text-base lg:text-[16px]"
+                  className="block text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]"
                 >
                   Our Business Sectors
                 </motion.span>
@@ -134,7 +135,7 @@ export default function BusinessSector() {
                 {/* Heading */}
                 <motion.h2
                   variants={itemVariants}
-                  className="mt-4 text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+                  className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
                 >
                   {current.label}
                 </motion.h2>
@@ -142,7 +143,7 @@ export default function BusinessSector() {
                 {/* Description */}
                 <motion.p
                   variants={itemVariants}
-                  className="mt-6 max-w-[620px] text-base leading-7 text-white sm:text-lg sm:leading-8 lg:mt-10 lg:text-[20px] lg:leading-[2]"
+                  className="mt-6 max-w-[620px] text-base leading-7 sm:text-lg sm:leading-8 lg:mt-10 lg:text-[20px] lg:leading-[2]"
                 >
                   {current.description}
                 </motion.p>
@@ -152,12 +153,18 @@ export default function BusinessSector() {
                   variants={itemVariants}
                   className="mt-8 lg:mt-16"
                 >
-                  <Link
-                    href="/about"
-                    className="inline-flex h-12 w-36 items-center justify-center rounded-full border border-white text-base font-medium text-white transition-all duration-300 hover:bg-white hover:text-black sm:h-14 sm:w-40 sm:text-lg lg:h-[63px] lg:w-[170px] lg:text-[20px]"
-                  >
-                    Learn more
-                  </Link>
+
+                                                     <Link
+              href="/contact"
+              className="group inline-flex items-center gap-3 rounded-full border border-white px-7 py-3.5 text-sm md:text-[16px] font-semibold  transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
+            >
+             Learn more
+
+              <ArrowUpRight
+                size={18}
+                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+            </Link>
                 </motion.div>
 
               </motion.div>
@@ -172,7 +179,7 @@ export default function BusinessSector() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="self-start lg:self-auto"
           >
-            <h3 className="text-3xl font-semibold text-white sm:text-4xl lg:text-[44px]">
+            <h3 className="text-3xl font-semibold sm:text-4xl lg:text-[44px]">
               {String(activeIndex + 1).padStart(2, "0")}/
               {String(total).padStart(2, "0")}
             </h3>
@@ -191,7 +198,7 @@ export default function BusinessSector() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="text-lg text-white sm:text-xl lg:text-[24px]"
+              className="text-lg sm:text-xl lg:text-[24px]"
             >
               Next : {nextSector.label}
             </motion.p>
@@ -207,7 +214,7 @@ export default function BusinessSector() {
               whileTap={{ scale: 0.92 }}
               transition={{ duration: 0.2 }}
               aria-label="Previous sector"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white text-white transition-colors duration-300 hover:bg-white hover:text-black sm:h-14 sm:w-14 lg:h-[60px] lg:w-[60px]"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white transition-colors duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45] sm:h-14 sm:w-14 lg:h-[60px] lg:w-[60px]"
             >
               <ChevronLeft size={24} />
             </motion.button>
@@ -219,7 +226,7 @@ export default function BusinessSector() {
               whileTap={{ scale: 0.92 }}
               transition={{ duration: 0.2 }}
               aria-label="Next sector"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white text-white transition-colors duration-300 hover:bg-white hover:text-black sm:h-14 sm:w-14 lg:h-[60px] lg:w-[60px]"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-white transition-colors duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45] sm:h-14 sm:w-14 lg:h-[60px] lg:w-[60px]"
             >
               <ChevronRight size={24} />
             </motion.button>

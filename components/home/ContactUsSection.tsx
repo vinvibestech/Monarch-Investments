@@ -5,7 +5,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 export default function ContactUsSection() {
   return (
@@ -13,7 +13,7 @@ export default function ContactUsSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/home/homecontact.png"
+          src="/home/homecontacts.png"
           alt="Dubai skyline at sunset"
           fill
           priority
@@ -32,26 +32,29 @@ export default function ContactUsSection() {
          
           {/* Heading */}
           <h2
-            className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+            className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
           >
-       Let’s Build the Future Together
+       The Next Opportunity Starts with a Conversation.
           </h2>
 
           {/* Description */}
           <p
-            className="mt-6 w-full max-w-[620px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
+            className="mt-6 w-full max-w-[620px] text-base leading-7 pb-6 sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
           >
-      Explore our investment sectors, services and strategic opportunities, or connect with Monarch Global Investments to learn more.
+Connect with Monarch Global Investments to explore strategic opportunities, build meaningful partnerships and create lasting value across diverse sectors.
+
           </p>
+          <Link
+                href="/about"
+                className="group inline-flex items-center gap-3 rounded-full border border-[#C99B45]/50 px-7 py-3.5 text-sm md:text-[16px] font-semibold text-[#E7C477] transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
+              >
+                Contact Us
 
-          {/* Button */}
-
-            <Link
-              href="/about"
-              className="mt-8 inline-flex h-14 w-40 items-center justify-center rounded-full border border-black text-black text-lg font-medium hover:bg-black hover:text-white sm:h-16 sm:w-48 sm:text-xl lg:mt-16 lg:h-[63px] lg:w-[170px] lg:text-[20px]"
-            >
-             Contact Us
-            </Link>
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+              </Link>
         </div>
       </div>
     </section>

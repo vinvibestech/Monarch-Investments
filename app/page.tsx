@@ -24,7 +24,7 @@ export default function Home() {
         description="Stay informed with the latest investment insights, industry trends, company news and developments across Education, Tourism, Energy and Agriculture."
       />
       <LatestNews
-        limit={4}
+        limit={6}
         source="home"
       />
       <BuildingSection/>

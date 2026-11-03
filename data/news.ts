@@ -31,7 +31,7 @@ export const news: NewsArticleData[] = [
     description:
       "Explore emerging investment trends, strategic opportunities and market developments shaping the future of global business.",
 
-    image: "/blognews/GlobalBusiness.png",
+    image: "/blognews/GlobalBusines.png",
 
     publishedDate:"January 15, 2026",
     category: "Investment Insights",
@@ -114,7 +114,7 @@ beyond: {
     description:
       "Discover how renewable energy and sustainable solutions are creating new opportunities for long-term economic and environmental growth.",
 
-    image: "/blognews/RenewableEnergy.png",
+    image: "/blognews/RenewableEnergys.png",
 
     publishedDate: "February 10, 2026",
     category: "Energy",
@@ -151,7 +151,7 @@ beyond: {
     description:
       "Explore how smart farming, aquaponics and agricultural innovation are transforming sustainable food production.",
 
-    image: "/blognews/ModernAgriculture.png",
+    image: "/blognews/ModernAgricultures.png",
 
     publishedDate: "March 5, 2026",
     category: "Agriculture",
@@ -188,7 +188,7 @@ beyond: {
     description:
       "Discover how innovative learning solutions and new approaches to education are creating opportunities for the next generation.",
 
-    image: "/blognews/TransformingEducation.png",
+    image: "/blognews/TransformingEducations.png",
 
     publishedDate: "April 12, 2026",
     category: "Education",

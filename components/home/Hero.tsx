@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { motion, type Variants } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
-
-    // Heading animation variants
     const letterVariants: Variants = {
         hidden: {
             opacity: 0,
@@ -28,7 +27,7 @@ export default function Hero() {
     const secondLine = "Grow Beyond Expectations.";
 
     return (
-        <section className="relative h-[100svh] min-h-[700px] w-full overflow-hidden">
+        <section className="relative min-h-[650px] h-[100svh] w-full overflow-hidden bg-[#101D32]">
 
             {/* Background Video */}
             <video
@@ -46,18 +45,29 @@ export default function Hero() {
             </video>
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute inset-0 bg-black/40" />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent" />
 
             {/* Main Content */}
-            <div className="relative z-20 flex h-full items-start pt-28 lg:items-center lg:pt-0">
+            <div className="relative z-20 flex h-full items-start pt-32 sm:pt-36 md:pt-40 lg:items-center lg:pt-16">
 
-                <div className="mx-auto w-full max-w-7xl px-6 sm:px-0">
+                <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 md:px-10 lg:px-10 xl:px-0">
 
                     <div className="w-full max-w-4xl">
 
                         {/* Animated Heading */}
                         <motion.h1
-                            className="text-3xl leading-tight font-bold text-white sm:text-4xl md:text-5xl lg:text-[56px] lg:leading-[1.1]"
+                            className="
+                                font-bold text-white
+                                text-[32px] leading-[1.2]
+                                sm:text-[40px] sm:leading-[1.15]
+                                md:text-[48px]
+                                lg:text-[56px] lg:leading-[1.1]
+                                xl:text-[54px]
+                                2xl:text-[62px]
+                            "
                         >
 
                             {/* First Line */}
@@ -69,7 +79,7 @@ export default function Hero() {
                                         variants={letterVariants}
                                         initial="hidden"
                                         animate="visible"
-                                        className="mr-[0.25em] inline-block"
+                                        className="mr-[0.2em] inline-block"
                                     >
                                         {word}
                                     </motion.span>
@@ -85,7 +95,7 @@ export default function Hero() {
                                         variants={letterVariants}
                                         initial="hidden"
                                         animate="visible"
-                                        className="mr-[0.25em] inline-block"
+                                        className="mr-[0.2em] inline-block"
                                     >
                                         {word}
                                     </motion.span>
@@ -111,7 +121,15 @@ export default function Hero() {
                                 delay: 1.15,
                                 ease: "easeOut",
                             }}
-                            className="mt-6 max-w-3xl text-sm leading-6 text-white/85 sm:text-base sm:leading-7 md:text-lg lg:mt-8"
+                            className="
+                                mt-5
+                                max-w-2xl
+                                text-sm leading-6
+                                text-white/85
+                                sm:mt-6 sm:text-base sm:leading-7
+                                md:text-lg
+                                lg:mt-8 lg:max-w-3xl
+                            "
                         >
                             Strategic investment opportunities designed to
                             create lasting value and sustainable growth.
@@ -134,14 +152,20 @@ export default function Hero() {
                                 delay: 1.5,
                                 ease: [0.22, 1, 0.36, 1],
                             }}
-                            className="mt-8 lg:mt-12"
+                            className="mt-7 sm:mt-9 lg:mt-12"
                         >
-                            <Link
-                                href="/about"
-                                className="inline-flex h-14 w-40 items-center justify-center rounded-full border border-[#F5F7FA] text-lg font-medium text-[#F5F7FA] transition-all duration-300 hover:bg-[#F5F7FA] hover:text-black sm:h-16 sm:w-48 sm:text-xl lg:h-[60px] lg:w-[250px] lg:text-[20px]"
-                            >
-                                Explore Our Investment
-                            </Link>
+                   
+                                       <Link
+              href="/contact"
+              className="group inline-flex items-center gap-3 rounded-full border border-[#C99B45]/50 px-7 py-3.5 text-sm md:text-[16px] font-semibold text-[#E7C477] transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
+            >
+             Explore Our Investment
+
+              <ArrowUpRight
+                size={18}
+                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+            </Link>
                         </motion.div>
 
                     </div>
