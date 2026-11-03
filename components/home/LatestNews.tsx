@@ -44,7 +44,7 @@ export const news: NewsArticleData[] = [
     title: "Strategic Investment Trends Shaping Global Business",
     description:
       "Explore emerging investment trends, strategic opportunities and market developments shaping the future of global business.",
-    image: "/blognews/GlobalBusines.png",
+    image: "/news/GlobalBusines.png",
     publishedDate: "January 15, 2026",
     category: "Investment Insights",
     author: "Investment Research Department",
@@ -123,7 +123,7 @@ export const news: NewsArticleData[] = [
     title: "The Future of Renewable Energy",
     description:
       "Discover how renewable energy and sustainable solutions are creating new opportunities for long-term economic and environmental growth.",
-    image: "/blognews/RenewableEnergys.png",
+    image: "/news/RenewableEnergys.png",
     publishedDate: "February 10, 2026",
     category: "Energy",
     author: "Investment Research Department",
@@ -156,7 +156,7 @@ export const news: NewsArticleData[] = [
     title: "Innovation in Modern Agriculture",
     description:
       "Explore how smart farming, aquaponics and agricultural innovation are transforming sustainable food production.",
-    image: "/blognews/ModernAgricultures.png",
+    image: "/news/ModernAgriculture.png",
     publishedDate: "March 5, 2026",
     category: "Agriculture",
     author: "Investment Research Department",
@@ -189,7 +189,7 @@ export const news: NewsArticleData[] = [
     title: "Transforming Education Through Innovation",
     description:
       "Discover how innovative learning solutions and new approaches to education are creating opportunities for the next generation.",
-    image: "/blognews/TransformingEducations.png",
+    image: "/news/TransformingEducations.png",
     publishedDate: "April 12, 2026",
     category: "Education",
     author: "Investment Research Department",
@@ -222,7 +222,7 @@ export const news: NewsArticleData[] = [
     title: "Building a Connected Global Business Platform",
     description:
       "Discover how Monarch Global Investments brings together businesses, strategic partnerships and opportunities across diverse industries and markets.",
-    image: "/blognews/BuildingConnected.png",
+    image: "/news/BuildingConnected.png",
     publishedDate: "April 12, 2026",
     category: "Business",
     author: "Investment Research Department",
@@ -255,7 +255,7 @@ export const news: NewsArticleData[] = [
     title: "Strategic Partnerships & Global Opportunities",
     description:
       "Explore how strategic partnerships and business alliances can create opportunities for collaboration, innovation and sustainable growth.",
-    image: "/blognews/StrategicPartnerships.png",
+    image: "/news/StrategicPartnerships.png",
     publishedDate: "April 12, 2026",
     category: "Business",
     author: "Investment Research Department",
