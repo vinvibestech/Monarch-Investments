@@ -1,3 +1,7 @@
+import BlogFinalCTA from "@/components/blog/BlogFinalCTA";
+import FeaturedStories from "@/components/blog/FeaturedStories";
+import IndustryFocus from "@/components/blog/IndustryFocus";
+import Newsletter from "@/components/blog/Newsletter";
 import Footer from "@/components/common/Footer";
 import Highlight from "@/components/common/Highlight";
 import SectionHeader from "@/components/common/SectionHeader";
@@ -10,12 +14,16 @@ export default function page() {
 
         <>
             <Highlight
-                label="Blog & News"
+                label="Knowledge. Perspectives. Opportunities."
                 title="Insights That Shape Tomorrow."
                 description="Explore perspectives on global investments, emerging industries, business opportunities and sustainable development."
-                tagLine=""
-                image="/blognews/newsblog.png"
+                tagLine="From industry developments to innovative ideas, Monarch Insights brings together knowledge and perspectives on the sectors shaping the future."
+                image="/blog/blogbanner.png"
             />
+            <FeaturedStories/>
+            <IndustryFocus/>
+         
+            
             <SectionHeader
                 label="Introduction"
                 title="Explore Our Latest Stories"
@@ -25,6 +33,8 @@ export default function page() {
                 limit={6}
                 source="blog"
             />
+               <Newsletter/>
+            <BlogFinalCTA/>
             <Footer />
         </>
     );

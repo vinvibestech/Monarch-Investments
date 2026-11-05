@@ -19,16 +19,16 @@ export const galleryCategories: GalleryCategory[] = [
     title: "Corporate Events",
     description:
       "Explore highlights from conferences, business meetings, corporate gatherings and industry events that reflect Monarch Global Investments’ business activities and professional network.",
-    coverImage: "/home/hero.png",
+    coverImage: "/gallery/gallery1.png",
 
     images: [
       {
         id: 1,
-        image: "",
+        image: "/gallery/gallery1.png",
       },
       {
         id: 2,
-        image: "/home/hero.png",
+        image: "/gallery/gallery1.png",
       },
       {
         id: 3,

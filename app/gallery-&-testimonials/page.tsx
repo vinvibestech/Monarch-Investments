@@ -14,7 +14,7 @@ export default function page() {
                 title="Showcasing Our Journey & Success Stories"
                 description="Explore moments that reflect Monarch Global Investments’ commitment to innovation, strategic partnerships and sustainable growth, while hearing from clients, investors and business partners who have experienced our approach."
                 tagLine=""
-                image="/home/hero.png"
+                image="/navbar/galleryimage.png"
             />
             <SectionHeader
                 label="Gallery Overview"

@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 export default function ContactSection() {
   return (
-    <section className="bg-white py-2 sm:py-2 lg:py-2">
+    <section className="py-2 sm:py-2 lg:py-2">
       <div className="mx-auto w-full w-[1440px] px-6 sm:px-10 md:px-12 lg:px-24">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 xl:gap-28">
 
@@ -13,34 +13,34 @@ export default function ContactSection() {
 
             {/* Office Address */}
             <div>
-              <h3 className="text-2xl font-medium leading-tight text-black sm:text-[22px]">
+              <h3 className="text-2xl font-medium leading-tight  sm:text-[22px]">
                 Office Address
               </h3>
 
-              <p className="mt-4 text-lg leading-8 text-[#111] sm:text-xl lg:text-[18px]">
+              <p className="mt-4 text-lg leading-8 sm:text-xl lg:text-[18px]">
               Dubai, United Arab Emirates
               </p>
             </div>
 
             {/* Phone */}
-            <div>
-              <h3 className="text-2xl font-medium leading-tight text-black sm:text-[22px]">
+            {/* <div>
+              <h3 className="text-2xl font-medium leading-tight  sm:text-[22px]">
                 Phone Number
               </h3>
 
-              <p className="mt-4 text-lg leading-8 text-[#111] sm:text-xl lg:text-[18px]">
+              <p className="mt-4 text-lg leading-8 sm:text-xl lg:text-[18px]">
                 +971 XX XXX XXXX
               </p>
-            </div>
+            </div> */}
 
             {/* Email */}
             <div>
-              <h3 className="text-2xl font-medium leading-tight text-black sm:text-[22px]">
+              <h3 className="text-2xl font-medium leading-tight  sm:text-[22px]">
                 Email Address
               </h3>
 
-              <p className="mt-4 break-words text-lg leading-8 text-[#111] sm:text-xl lg:text-[18px]">
-              info@monarchinvestments.com
+              <p className="mt-4 break-words text-lg leading-8 sm:text-xl lg:text-[18px]">
+              monarchinvestmentsglobal@gmail.com
               </p>
             </div>
 
@@ -55,7 +55,7 @@ export default function ContactSection() {
                 type="text"
                 name="name"
                 placeholder="Full Name"
-                className="h-[52px] w-full bg-transparent text-lg text-black outline-none placeholder:text-[#111] sm:text-xl lg:text-[18px]"
+                className="h-[52px] w-full bg-transparent text-lg  outline-none placeholder sm:text-xl lg:text-[18px]"
               />
             </div>
 
@@ -67,7 +67,7 @@ export default function ContactSection() {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  className="h-[52px] w-full bg-transparent text-lg text-black outline-none placeholder:text-[#111] sm:text-xl lg:text-[18px]"
+                  className="h-[52px] w-full bg-transparent text-lg  outline-none placeholder sm:text-xl lg:text-[18px]"
                 />
               </div>
 
@@ -76,7 +76,7 @@ export default function ContactSection() {
                   type="tel"
                   name="phone"
                   placeholder="Number"
-                  className="h-[52px] w-full bg-transparent text-lg text-black outline-none placeholder:text-[#111] sm:text-xl lg:text-[18px]"
+                  className="h-[52px] w-full bg-transparent text-lg  outline-none placeholder sm:text-xl lg:text-[18px]"
                 />
               </div>
 
@@ -88,18 +88,23 @@ export default function ContactSection() {
                 name="message"
                 placeholder="Message"
                 rows={4}
-                className="min-h-[145px] w-full resize-none bg-transparent pt-3 text-lg text-black outline-none placeholder:text-[#111] sm:text-xl lg:text-[18px]"
+                className="min-h-[145px] w-full resize-none bg-transparent pt-3 text-lg  outline-none placeholder sm:text-xl lg:text-[18px]"
               />
             </div>
 
             {/* Submit */}
             <div className="mt-10 flex justify-center sm:mt-12">
-              <button
-                type="submit"
-                className="flex h-[68px] w-[220px] items-center justify-center gap-5 rounded-full border border-black text-xl font-medium text-black transition-all duration-300 hover:bg-black hover:text-white sm:w-[220px] lg:text-[18px]"
+                <Link
+                href="/about"
+                className="group inline-flex items-center gap-3 rounded-full border border-[#C99B45]/50 px-7 py-3.5 text-sm md:text-[16px] font-semibold text-[#E7C477] transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
               >
-                <span>Submit</span>
-              </button>
+                Submit
+
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+              </Link>
             </div>
 
           </form>

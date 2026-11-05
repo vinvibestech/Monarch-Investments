@@ -16,17 +16,17 @@ const menuItems = [
   {
     label: "Services & Products",
     href: "/services-&-products",
-    image: "/navbar/services.jpg",
+    image: "/navbar/servicepage.png",
   },
   {
     label: "Investment Information",
     href: "/Investment-Information",
-    image: "/navbar/investment.jpg",
+    image: "/navbar/investmentpage.png",
   },
   {
     label: "Crypto Information",
     href: "/crypto-information",
-    image: "/navbar/crypto.jpg",
+    image: "/navbar/coin.jpeg",
   },
   // {
   //   label: "Aquaponics Products",
@@ -36,17 +36,17 @@ const menuItems = [
   {
     label: "Blog & News",
     href: "/blog-&-news",
-    image: "/navbar/blog.jpg",
+    image: "/navbar/blogpage.png",
   },
   {
     label: "Gallery & Testimonials",
     href: "/gallery-&-testimonials",
-    image: "/navbar/gallery.jpg",
+    image: "/navbar/navbarimage.png",
   },
   {
     label: "Contact Us",
     href: "/contact",
-    image: "/navbar/contact.jpg",
+    image: "/navbar/contactpage.png",
   },
 ];
 

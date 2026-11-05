@@ -2,7 +2,7 @@
 
 export default function VisitOffice() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
+    <section className=" py-16 sm:py-20 lg:py-24">
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 md:px-12 lg:px-20">
 
         {/* Top Content */}
@@ -10,18 +10,18 @@ export default function VisitOffice() {
 
           {/* Left */}
           <div>
-            <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
+            <span className="text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]">
               Find Us
             </span>
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
+            <h2 className="mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
               Visit Our Office
             </h2>
           </div>
 
           {/* Right */}
           <div className="lg:pt-2">
-            <p className="max-w-[560px] text-base mt-5 leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="max-w-[560px] text-base mt-5 leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
             We welcome visitors by appointment. Contact Monarch Global Investments to schedule a meeting with our team and discuss your investment, business or partnership requirements.
             </p>
           </div>
@@ -43,15 +43,15 @@ export default function VisitOffice() {
         </div>
 
       </div>
-      <section className={`bg-white py-14 sm:py-16 lg:py-18 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26`}>
+      <section className={`py-14 sm:py-16 lg:py-18 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26`}>
             <h2
-                className={`mt-4 text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
+                className={`mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
             >
              Connect With Monarch Global Investments
             </h2>
 
             <div className={`mt-5 lg:mt-5`}>
-                <p className="text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+                <p className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
            Explore opportunities across Education, Agriculture, Energy and Tourism and connect with our team to learn more about our investment solutions, strategic partnerships and sustainable business initiatives.
                 </p>
             </div>

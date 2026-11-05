@@ -6,18 +6,18 @@ import { galleryCategories } from "@/data/gallery";
 
 export default function GalleryCategories() {
   return (
-    <section id="gallerysection" className="bg-white pt-1 pb-16 sm:py-20 lg:py-10">
+    <section id="gallerysection" className="pt-1 pb-16 sm:py-20 lg:py-10">
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 md:px-12 lg:px-20">
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:gap-20">
 
           {/* Left Heading */}
           <div className="lg:pt-2">
-            <span className="text-sm font-medium text-black sm:text-base lg:text-[16px]">
+            <span className="text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]">
               Gallery
             </span>
 
-            <h2 className="mt-5 max-w-[520px] text-4xl font-semibold leading-[1.15] text-black sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
+            <h2 className="mt-5 max-w-[520px] text-4xl font-semibold leading-[1.15] sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
               Gallery Categories
             </h2>
           </div>
@@ -42,12 +42,12 @@ export default function GalleryCategories() {
                 </div>
 
                 {/* Title */}
-                <h3 className=" mt-4 text-3xl font-semibold leading-none text-black lg:text-[26px]">
+                <h3 className=" mt-4 text-3xl font-semibold leading-none lg:text-[26px]">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="mt-4 max-w-[480px] text-base leading-7 text-[#1A1A1A] sm:text-lg sm:leading-8 lg:text-[18px] lg:leading-[2]]">
+                <p className="mt-4 max-w-[480px] text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[18px] lg:leading-[2]]">
                   {item.description}
                 </p>
               </Link>

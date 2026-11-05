@@ -26,21 +26,21 @@ export default function GalleryCategory({
   );
 
   return (
-    <section className="bg-white py-10 pt-30 sm:py-14 sm:pt-30 lg:pt-30 lg:py-16">
+    <section className=" py-10 pt-30 sm:py-14 sm:pt-30 lg:pt-30 lg:py-16">
       <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-10 md:px-12 lg:px-20">
 
         {/* Breadcrumb */}
-        <nav className="mb-8 flex items-center gap-2 text-sm text-[#666]">
+        <nav className="mb-8 flex items-center gap-2 text-sm ">
           <Link
             href="/gallery-&-testimonials#gallerysection"
-            className="transition hover:text-black"
+            className="transition "
           >
             Gallery
           </Link>
 
           <ChevronRight size={14} />
 
-          <span className="text-black">
+          <span className="text-white">
             {title}
           </span>
         </nav>
@@ -50,15 +50,15 @@ export default function GalleryCategory({
 
           {/* Left Content */}
           <div>
-            <span className="text-sm font-medium text-black sm:text-base">
+            <span className="text-sm text-[#C99B45] font-medium  sm:text-base">
               News & Insights
             </span>
 
-            <h1 className="mt-4 text-4xl font-semibold leading-tight text-black sm:text-5xl lg:text-[41px] lg:leading-[1.15]">
+            <h1 className="mt-4 text-4xl font-semibold leading-tight  sm:text-5xl lg:text-[41px] lg:leading-[1.15]">
               {title}
             </h1>
 
-            <p className="mt-6 max-w-[520px] text-base leading-8 text-[#1A1A1A] sm:text-lg lg:text-[20px] lg:leading-[2]">
+            <p className="mt-6 max-w-[520px] text-base leading-8 text-white/75 sm:text-lg lg:text-[20px] lg:leading-[2]">
               {description}
             </p>
           </div>
