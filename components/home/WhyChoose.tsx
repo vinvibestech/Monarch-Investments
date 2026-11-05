@@ -142,7 +142,7 @@ export default function WhyChoose() {
             >
               <motion.p
                 variants={fadeUp}
-                className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]"
+                className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]"
               >
                 At Monarch Global Investments, we focus on strategic
                 investment solutions designed to create sustainable
@@ -153,7 +153,7 @@ export default function WhyChoose() {
 
               <motion.p
                 variants={fadeUp}
-                className="mt-6 text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]"
+                className="mt-6 text-base text-white/75 leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]"
               >
                 Our diversified presence across Education, Tourism,
                 Energy and Agriculture enables us to explore opportunities
@@ -204,12 +204,12 @@ export default function WhyChoose() {
                         {pillar.title}
                       </h4>
 
-                      <span className="text-sm font-medium tracking-wider text-[#AAB7C9]">
+                      <span className="text-sm font-medium tracking-wider text-white/75">
                         {pillar.number}
                       </span>
                     </div>
 
-                    <p className="mt-3 max-w-[550px] text-sm leading-6 text-[#AAB7C9] sm:text-base sm:leading-7">
+                    <p className="mt-3 max-w-[550px] text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
                       {pillar.description}
                     </p>
                   </div>
@@ -280,14 +280,14 @@ function ApproachSection() {
 
         <motion.h2
           variants={fadeUp}
-          className="mt-4 text-3xl font-semibold leading-tight text-[#F5F7FA] sm:text-4xl md:text-5xl lg:text-[41px]"
+          className="mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:text-[41px]"
         >
           From Vision to Value.
         </motion.h2>
 
         <motion.p
           variants={fadeUp}
-          className="mx-auto mt-5 max-w-3xl text-base leading-7 text-[#AAB7C9] sm:text-lg sm:leading-8 lg:text-[20px]"
+          className="mx-auto mt-5 max-w-3xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px]"
         >
           A strategic approach to identifying opportunities and
           building sustainable growth.
@@ -382,7 +382,7 @@ function ApproachSection() {
                     {step.title}
                   </h3>
                   {/* Always Visible Description */}
-                  <p className="mt-4 text-sm md:text-[16px] leading-7">
+                  <p className="mt-4 text-sm md:text-[16px] text-white/75 leading-7">
                     {step.description}
                   </p>
 
@@ -420,7 +420,7 @@ function ApproachSection() {
           Vision. Strategy. Lasting Value.
         </h3>
 
-        <p className="mt-3 text-sm tracking-wide text-[#AAB7C9] sm:text-base">
+        <p className="mt-3 text-sm tracking-wide text-white/75 sm:text-base">
           The foundation of our investment approach.
         </p>
 

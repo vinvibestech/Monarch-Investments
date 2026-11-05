@@ -175,7 +175,7 @@ export default function ApproachSections() {
             </div>
 
             {/* Right Content */}
-            <div className="order-1 w-full pt-0 md:pt-2 lg:order-2 lg:pt-3">
+            <div className="order-1 text-white/75 w-full pt-0 md:pt-2 lg:order-2 lg:pt-3">
               <Content
                 label={hero.label}
                 title={hero.title}
@@ -214,7 +214,7 @@ export default function ApproachSections() {
             "
           >
             {/* Left Content */}
-            <div className="order-1 w-full pt-0 md:pt-2 lg:pt-3">
+            <div className="order-1 w-full text-white/75 pt-0 md:pt-2 lg:pt-3">
               <Content
                 label={partnership.label}
                 title={partnership.title}
@@ -310,7 +310,7 @@ export default function ApproachSections() {
             </div>
 
             {/* Right Content */}
-            <div className="order-1 w-full pt-0 md:pt-2 lg:order-2 lg:pt-3">
+            <div className="order-1 w-full text-white/75 pt-0 md:pt-2 lg:order-2 lg:pt-3">
               <Content
                 label={group.label}
                 title={group.title}

@@ -11,7 +11,7 @@ export default function ConnectingInvestment() {
             </h2>
 
             <div className={`mt-5 lg:mt-5`}>
-                <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+                <p className="text-base leading-7 sm:text-lg text-white/75 sm:leading-8 lg:text-[20px] lg:leading-[2]">
                Monarch Global Investments brings together strategic services and innovative solutions across Education, Agriculture, Energy and Tourism, supporting businesses and investors as they explore new opportunities and build sustainable growth.
                 </p>
             </div>

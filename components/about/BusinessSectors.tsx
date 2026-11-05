@@ -110,13 +110,13 @@ export default function BusinessSectors() {
                   <span className="text-[#C99B45]">
                     {sector.number}
                   </span>
-                  <span className="mx-2 text-[#AAB7C9]">—</span>
+                  <span className="mx-2">—</span>
                   {sector.title}
                 </h3>
 
                 {/* DESCRIPTION */}
 
-                <p className="mt-2 max-w-[500px] text-base leading-7 text-[#AAB7C9] sm:text-lg sm:leading-8 lg:text-[19px]">
+                <p className="mt-2 max-w-[500px] text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[19px]">
                   {sector.description}
                 </p>
               </motion.article>

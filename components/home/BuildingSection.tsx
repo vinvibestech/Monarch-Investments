@@ -93,7 +93,7 @@ export default function BuildingSection() {
             {/* Description */}
             <motion.p
               variants={textVariants}
-              className="w-full max-w-[620px] pb-6 mt-6 text-base leading-7 sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
+              className="w-full max-w-[620px] text-white/75 pb-6 mt-6 text-base leading-7 sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
             >
               Monarch Global Investments is committed to supporting
               sustainable growth across Education, Agriculture, Energy

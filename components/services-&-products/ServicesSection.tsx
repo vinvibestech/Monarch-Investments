@@ -27,7 +27,7 @@ export default function ServicesSection() {
           </div>
 
           <div>
-            <p className="max-w-[560px] text-base mt-5 leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="max-w-[560px] text-base mt-5 leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
 Monarch Global Investments offers strategic services that support business growth, investment planning, market analysis and sustainable development through expert guidance and trusted partnerships.
             </p>
           </div>
@@ -67,7 +67,7 @@ Monarch Global Investments offers strategic services that support business growt
               const isOpen = active === index;
 
               return (
-                <div key={service.title} className="border-b border-[#E5E5E5]">
+                <div key={service.title} className="border-b border-white/75">
                   <button
                     onClick={() => setActive(isOpen ? -1 : index)}
                     className="flex w-full items-center justify-between py-7"
@@ -79,7 +79,7 @@ Monarch Global Investments offers strategic services that support business growt
                     <motion.span
                       animate={{ rotate: isOpen ? 135 : 0 }}
                       transition={{ duration: 0.35, ease: "easeInOut" }}
-                      className="flex items-center justify-center"
+                      className="flex items-center text-white/75 justify-center"
                     >
                       {isOpen ? <X size={28} /> : <Plus size={28} />}
                     </motion.span>
@@ -101,7 +101,7 @@ Monarch Global Investments offers strategic services that support business growt
                           transition={{ duration: 0.35, delay: 0.1 }}
                           className="pb-8"
                         >
-                          <p className="max-w-[620px] text-[20px] leading-[2]">
+                          <p className="max-w-[620px] text-white/75 text-[20px] leading-[2]">
                             {service.description}
                           </p>
 

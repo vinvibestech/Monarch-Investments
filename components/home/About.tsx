@@ -100,7 +100,7 @@ export default function About() {
             {/* Description */}
             <motion.p
               variants={fadeUp}
-              className="mt-6 w-full max-w-[620px] text-base leading-7 sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
+              className="mt-6 w-full max-w-[620px] text-white/75 text-base leading-7 sm:text-lg sm:leading-8 md:text-xl lg:mt-10 lg:text-[20px] lg:leading-[2]"
             >
               Monarch Global Investments brings together diverse sectors under
               a strategic investment platform focused on sustainable growth

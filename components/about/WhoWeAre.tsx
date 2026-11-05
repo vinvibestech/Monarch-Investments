@@ -95,19 +95,19 @@ export default function WhoWeAre() {
               variants={itemVariants}
               className="mt-7 space-y-5 lg:mt-9"
             >
-              <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              <p className="text-base leading-7 sm:text-lg text-white/75 sm:leading-8 lg:text-[20px] lg:leading-[2]">
                 Monarch Global Investments brings together businesses,
                 strategic partnerships and investment opportunities through
                 a diversified corporate platform.
               </p>
 
-              <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              <p className="text-base leading-7 sm:text-lg text-white/75 sm:leading-8 lg:text-[20px] lg:leading-[2]">
                 Operating across Education, Agriculture, Energy and Tourism,
                 we focus on connecting expertise, strengthening business
                 relationships and supporting sustainable growth.
               </p>
 
-              <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+              <p className="text-base leading-7 sm:text-lg text-white/75 sm:leading-8 lg:text-[20px] lg:leading-[2]">
                 Through strategic planning, responsible decision-making
                 and effective execution, we aim to create meaningful
                 opportunities and lasting value.
@@ -156,7 +156,7 @@ export default function WhoWeAre() {
                         {sector.title}
                       </h3>
 
-                      <p className="mt-2 text-sm leading-6 text-[#AAB7C9]">
+                      <p className="mt-2 text-white/75 text-sm leading-6 text-[#AAB7C9]">
                         {sector.description}
                       </p>
                     </div>
@@ -200,7 +200,7 @@ export default function WhoWeAre() {
               Our Mission
             </h3>
 
-            <p className="mt-4 text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="mt-4 text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               To transform opportunities into sustainable businesses by
               combining investment, expertise, strategic partnerships,
               and disciplined execution to create lasting value.
@@ -226,7 +226,7 @@ export default function WhoWeAre() {
             <h3 className="mt-7 text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]">
               Our Vision
             </h3>
-            <p className="mt-4 text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="mt-4 text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
           To shape a sustainable future through strategic investments, innovation, and responsible growth.
             </p>
 

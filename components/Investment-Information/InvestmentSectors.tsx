@@ -1,106 +1,170 @@
 "use client";
 
-const sectors = [
+import {
+  BriefcaseBusiness,
+  Building2,
+  Handshake,
+  TrendingUp,
+} from "lucide-react";
+
+import { motion, type Variants } from "framer-motion";
+
+const investmentFocus = [
   {
-    title: "Education",
-    subtitle: "Empowering Knowledge. Creating Opportunity.",
-    description: [
-      "We support educational initiatives, businesses and innovative solutions that advance knowledge, skills, technology and human development.",
-      "Our objective is to contribute to education ecosystems that prepare individuals and communities for emerging opportunities while encouraging innovation and lifelong learning.",
-    ],
-    focusAreas:
-      "Education & Training • Skill Development • Educational Technology • Knowledge Platforms • Future Learning Solutions",
+    number: "01",
+    title: "Business Development",
+    description:
+      "Supporting promising business concepts and ventures with growth potential.",
+    icon: BriefcaseBusiness,
   },
   {
-    title: "Agriculture",
-    subtitle: "Growing Responsibly. Building Food Security.",
-    description: [
-      "Agriculture remains fundamental to sustainable economic development.",
-      "Monarch Global Investments supports opportunities in modern agriculture, sustainable farming, agribusiness, agricultural technology and responsible resource management.",
-      "We seek initiatives that improve productivity, strengthen food security and contribute to more sustainable agricultural ecosystems.",
-    ],
-    focusAreas:
-      "Sustainable Agriculture • Agribusiness • Agri-Innovation • Food Security • Smart Farming • Resource Management",
+    number: "02",
+    title: "Infrastructure & Assets",
+    description:
+      "Exploring opportunities in infrastructure, facilities and sector-specific assets.",
+    icon: Building2,
   },
   {
-    title: "Energy",
-    subtitle: "Powering Sustainable Progress.",
-    description: [
-      "The global transition toward cleaner and more efficient energy creates significant opportunities for innovation and responsible investment.",
-      "We explore and support renewable, sustainable and future-focused energy initiatives capable of contributing to greater efficiency, environmental responsibility and long-term development.",
-    ],
-    focusAreas:
-      "Renewable Energy • Clean Energy • Energy Innovation • Sustainable Infrastructure • Future Energy Solutions",
+    number: "03",
+    title: "Strategic Ventures",
+    description:
+      "Collaborating on new business ventures, joint initiatives and market expansion.",
+    icon: Handshake,
   },
   {
-    title: "Tourism",
-    subtitle: "Connecting Destinations. Creating Economic Opportunity.",
-    description: [
-      "Tourism connects people, cultures, destinations and economies.",
-      "Monarch Global Investments explores opportunities across sustainable tourism, hospitality and destination-focused businesses that have the potential to create memorable experiences while supporting local and regional economic development.",
-    ],
-    focusAreas:
-      "Sustainable Tourism • Hospitality • Destination Development • Tourism Innovation • Travel Ecosystems",
+    number: "04",
+    title: "Growth Opportunities",
+    description:
+      "Identifying established businesses and initiatives with opportunities for development and scalability.",
+    icon: TrendingUp,
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    filter: "blur(5px)",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 export default function InvestmentSectors() {
   return (
-    <section className="bg-white py-5 md:py-10 lg:py-10">
+    <section className="py-16 md:py-20 lg:py-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-        <div className="grid gap-16 lg:grid-cols-[340px_1fr] lg:gap-24">
 
-          {/* Left */}
-          <div>
-            <h2 className="w-[420px] text-3xl font-semibold leading-tight text-black sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.15]">
-              Investing Across Industries
-              <br />
-              That Shape Tomorrow
-            </h2>
+        <div className="grid gap-12 lg:grid-cols-[380px_1fr] lg:gap-20">
 
-            <p className="mt-4 max-w-[500px] space-y-4 text-lg leading-[1.8] text-[#1A1A1A] lg:text-[18px]">
-              Monarch Global Investments focuses on four strategic sectors
-              with significant potential for sustainable development and
-              long-term economic impact.
-            </p>
-          </div>
+          {/* LEFT CONTENT */}
 
-          {/* Right */}
-          <div className="grid gap-x-16 gap-y-14 md:grid-cols-2 lg:gap-x-20 lg:gap-y-16">
-            {sectors.map((sector) => (
-              <div key={sector.title}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={containerVariants}
+          >
+            <motion.span
+              variants={itemVariants}
+              className="text-sm font-medium text-[#C99B45] sm:text-base lg:text-[16px]"
+            >
+              Our Investment Focus
+            </motion.span>
 
-                {/* Sector Title */}
-                <h3 className="text-3xl font-semibold leading-none text-black lg:text-[28px]">
-                  {sector.title}
-                </h3>
+            <motion.h2
+              variants={itemVariants}
+              className="mt-4 max-w-[420px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+            >
+              Recognising Potential. Developing Possibilities.
+            </motion.h2>
 
-                {/* Subtitle */}
-                <h4 className="mt-5 text-lg font-semibold leading-snug text-black lg:text-[20px]">
-                  {sector.subtitle}
-                </h4>
+            <motion.p
+              variants={itemVariants}
+              className="mt-6 max-w-[480px] text-base text-white/75 leading-7 sm:text-lg sm:leading-8 lg:text-[18px] lg:leading-[1.9]"
+            >
+              We explore opportunities at different stages of development,
+              with an emphasis on strategic alignment, commercial potential
+              and long-term viability.
+            </motion.p>
 
-                {/* Description */}
-                <div className="mt-4 max-w-[500px] space-y-4 text-lg leading-[1.8] text-[#1A1A1A] lg:text-[18px]">
-                  {sector.description.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
+    
+          </motion.div>
 
-                {/* Focus Areas */}
-                <div className="mt-6 max-w-[500px]">
-                  <p className="text-sm font-semibold tracking-wide text-black">
-                    Focus Areas
-                  </p>
+          {/* RIGHT CONTENT - INVESTMENT CARDS */}
 
-                  <p className="mt-2 text-base leading-7 text-[#555]">
-                    {sector.focusAreas}
-                  </p>
-                </div>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.15 }}
+            className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6"
+          >
+            {investmentFocus.map((item) => {
+              const Icon = item.icon;
 
-              </div>
-            ))}
-          </div>
+              return (
+                <motion.article
+                  key={item.number}
+                  variants={itemVariants}
+                  whileHover={{
+                    y: -6,
+                    transition: { duration: 0.3 },
+                  }}
+                  className="group relative flex min-h-[230px] flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#14233A]/70 p-6 transition-all duration-500 sm:p-7 lg:min-h-[250px]"
+                >
+                  {/* TOP ROW */}
+
+                  <div className="flex items-center justify-between">
+
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#C99B45]/20 bg-[#C99B45]/10 transition-all duration-500 ">
+                      <Icon
+                        size={23}
+                        strokeWidth={1.5}
+                        className="text-[#C99B45] transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+
+                  </div>
+
+                  {/* CARD CONTENT */}
+
+                  <div className="mt-auto pt-9">
+
+                    <h3 className="text-xl font-semibold leading-snug sm:text-2xl">
+                      {item.title}
+                    </h3>
+
+                    <p className="mt-3 text-sm leading-7 text-white/75 sm:text-base">
+                      {item.description}
+                    </p>
+
+                  </div>
+
+                  {/* BOTTOM ACCENT */}
+
+                  <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C99B45] transition-all duration-500 group-hover:w-full" />
+
+                </motion.article>
+              );
+            })}
+          </motion.div>
 
         </div>
       </div>

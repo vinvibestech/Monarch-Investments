@@ -442,7 +442,7 @@ export default function LatestNews({
 
                 {/* DESCRIPTION */}
 
-                <p className="mt-3 line-clamp-3 min-h-[72px] text-sm leading-6 text-[#AAB7C9]">
+                <p className="mt-3 line-clamp-3 min-h-[72px] leading-6text-sm md:text-[16px] text-white/75">
 
                   {item.description}
 

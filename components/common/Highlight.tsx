@@ -49,12 +49,12 @@ export default function Highlight({
         {/* Description */}
         <div className="mt-8 flex justify-start px-5 sm:px-8 md:px-12 lg:mt-12  lg:px-16 xl:px-30">
           <div className="max-w-[1230px]">
-            <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               {description}
             </p>
             {tagLine && (
               <div className=" pt-6">
-                <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+                <p className="text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
                   {tagLine}
                 </p>
               </div>

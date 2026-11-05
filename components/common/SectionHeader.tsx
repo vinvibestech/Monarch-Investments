@@ -30,7 +30,7 @@ export default function SectionHeader({
       </h2>
 
       <div className={`mt-5 lg:mt-5 ${descriptionWidth}`}>
-        <p className="text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+        <p className="text-base leading-7 sm:text-lg sm:leading-8 text-white/75 lg:text-[20px] lg:leading-[2]">
           {description}
         </p>
       </div>

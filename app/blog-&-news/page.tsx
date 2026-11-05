@@ -11,8 +11,8 @@ export default function page() {
         <>
             <Highlight
                 label="Blog & News"
-                title="Insights That Drive Smarter Decisions"
-                description="Stay informed with the latest investment insights, business developments, industry trends and company updates from Monarch Global Investments across Education, Agriculture, Energy and Tourism."
+                title="Insights That Shape Tomorrow."
+                description="Explore perspectives on global investments, emerging industries, business opportunities and sustainable development."
                 tagLine=""
                 image="/blognews/newsblog.png"
             />

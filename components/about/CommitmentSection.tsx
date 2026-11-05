@@ -98,14 +98,14 @@ export default function CommitmentSection() {
               Growth with Purpose. Value that Lasts.
             </h2>
 
-            <p className="mt-5 text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="mt-5 text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               At Monarch Global Investments, our commitment extends beyond
               business growth. We believe in building responsible businesses,
               nurturing meaningful partnerships and creating opportunities
               that contribute to long-term economic and social progress.
             </p>
 
-            <p className="mt-5 text-base leading-7 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
+            <p className="mt-5 text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-[20px] lg:leading-[2]">
               Guided by integrity, innovation and sustainability, we strive
               to create lasting value for our stakeholders and the communities
               we serve.
@@ -166,7 +166,7 @@ export default function CommitmentSection() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-7 text-[#AAB7C9] sm:text-base">
+                  <p className="mt-3 text-sm leading-7 text-white/75 sm:text-base">
                     {item.description}
                   </p>
 

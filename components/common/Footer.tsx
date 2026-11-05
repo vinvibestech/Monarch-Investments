@@ -5,22 +5,21 @@ import Link from "next/link";
 const company = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Services & Products", href: "/services" },
-  { name: "Investments", href: "/investments" },
-  { name: "Crypto", href: "/crypto" },
-  { name: "Aquaponics", href: "/aquaponics" },
+  { name: "Services & Products", href: "/services-&-products" },
+  { name: "Investments", href: "/Investment-Information" },
+  { name: "Crypto", href: "/crypto-information" },
 ];
 
 const sectors = [
-  { name: "Education", href: "/education" },
-  { name: "Tourism", href: "/tourism" },
-  { name: "Energy", href: "/energy" },
-  { name: "Agriculture", href: "/agriculture" },
+  { name: "Education", },
+  { name: "Tourism", },
+  { name: "Energy",  },
+  { name: "Agriculture", },
 ];
 
 const resources = [
-  { name: "Blog & News", href: "/blog" },
-  { name: "Gallery", href: "/gallery" },
+  { name: "Blog & News", href: "/blog-&-news" },
+  { name: "Gallery", href: "/gallery-&-testimonials" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -91,12 +90,12 @@ export default function Footer() {
             <ul className="mt-5 space-y-4 lg:mt-6 lg:space-y-5">
               {sectors.map((item) => (
                 <li key={item.name}>
-                  <Link
-                    href={item.href}
+                  <p
+                   
                     className="text-base text-white/85 transition hover:text-white sm:text-lg lg:text-[19px]"
                   >
                     {item.name}
-                  </Link>
+                  </p>
                 </li>
               ))}
             </ul>

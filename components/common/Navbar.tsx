@@ -25,14 +25,14 @@ const menuItems = [
   },
   {
     label: "Crypto Information",
-    href: "/crypto",
+    href: "/crypto-information",
     image: "/navbar/crypto.jpg",
   },
-  {
-    label: "Aquaponics Products",
-    href: "/Aquaponics-Products",
-    image: "/navbar/aquaponics.jpg",
-  },
+  // {
+  //   label: "Aquaponics Products",
+  //   href: "/Aquaponics-Products",
+  //   image: "/navbar/aquaponics.jpg",
+  // },
   {
     label: "Blog & News",
     href: "/blog-&-news",
