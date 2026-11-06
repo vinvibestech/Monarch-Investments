@@ -77,7 +77,7 @@ export default function BusinessSector() {
   };
 
   return (
-    <section className="relative min-h-[700px] overflow-hidden lg:h-[760px]">
+    <section id="businessSector" className="relative min-h-[700px] overflow-hidden lg:h-[760px]">
 
       {/* Background Image Slider */}
       <AnimatePresence mode="sync">
@@ -155,7 +155,7 @@ export default function BusinessSector() {
                 >
 
                                                      <Link
-              href="/contact"
+               href={`/business-sectors/${current.label.toLowerCase()}`}
               className="group inline-flex items-center gap-3 rounded-full border border-white px-7 py-3.5 text-sm md:text-[16px] font-semibold  transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
             >
              Learn more

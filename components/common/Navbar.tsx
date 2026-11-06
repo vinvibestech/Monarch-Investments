@@ -56,9 +56,9 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-  document.documentElement.dir = language === "en" ? "ltr" : "rtl";
-  document.documentElement.lang = language === "ar" ? "ar" : "en";
-}, [language]);
+    document.documentElement.dir = language === "en" ? "ltr" : "rtl";
+    document.documentElement.lang = language === "ar" ? "ar" : "en";
+  }, [language]);
 
   // Hovered menu item
   const [hoveredItem, setHoveredItem] = useState(menuItems[0]);
@@ -114,26 +114,26 @@ export default function Navbar() {
       {/* Navbar */}
       <header
         className={`fixed top-0 left-0 z-40 w-full transition-all duration-500 ${isScrolledStyle
-            ? "px-4 py-3 lg:px-10"
-            : "px-0 py-0"
+          ? "px-4 py-3 lg:px-10"
+          : "px-0 py-0"
           }`}
       >
         <div
           className={`flex items-center justify-between transition-all duration-500 ${isScrolledStyle
-              ? "h-[80px] rounded-2xl bg-white px-6 shadow-lg sm:px-8 lg:px-15"
-              : "h-[106px] bg-transparent px-6 sm:px-10 lg:px-24"
+            ? "h-[80px] rounded-2xl bg-white px-6 shadow-lg sm:px-8 lg:px-15"
+            : "h-[106px] bg-transparent px-6 sm:px-10 lg:px-24"
             }`}
         >
           <Link href="/" className="flex shrink-0 items-center">
-  <Image
-    src="/home/logos.png"
-    alt="Monarch"
-    width={160}
-    height={50}
-    priority
-    className="h-auto w-[100px] object-contain transition-opacity duration-300 sm:w-[100px] lg:w-[110px]"
-  />
-</Link>
+            <Image
+              src="/home/logos.png"
+              alt="Monarch"
+              width={160}
+              height={50}
+              priority
+              className="h-auto w-[100px] object-contain transition-opacity duration-300 sm:w-[100px] lg:w-[110px]"
+            />
+          </Link>
 
           {/* Right */}
           <div className="flex items-center gap-4 sm:gap-8">
@@ -172,8 +172,8 @@ export default function Navbar() {
               <Menu
                 size={32}
                 className={`transition duration-500 hover:scale-110 ${isScrolledStyle
-                    ? "text-black"
-                    : "text-white"
+                  ? "text-black"
+                  : "text-white"
                   }`}
               />
             </button>
@@ -181,19 +181,18 @@ export default function Navbar() {
         </div>
       </header>
 
-    {/* Fullscreen Menu */}
-<div
-  className={`fixed inset-0 z-50 bg-white transition-all duration-500 ${
-    open
-      ? "translate-y-0 opacity-100"
-      : "pointer-events-none -translate-y-full opacity-0"
-  }`}
->
-  <div className="flex h-dvh w-full overflow-hidden">
+      {/* Fullscreen Menu */}
+      <div
+        className={`fixed inset-0 z-50 bg-white transition-all duration-500 ${open
+          ? "translate-y-0 opacity-100"
+          : "pointer-events-none -translate-y-full opacity-0"
+          }`}
+      >
+        <div className="flex h-dvh w-full overflow-hidden">
 
-    {/* Left Menu */}
-    <div
-      className="
+          {/* Left Menu */}
+          <div
+            className="
         relative
         flex
         h-full
@@ -214,11 +213,11 @@ export default function Navbar() {
         lg:pt-14
         xl:px-24
       "
-    >
-      {/* Logo */}
-      <div className="shrink-0">
-        <h2
-          className="
+          >
+            {/* Logo */}
+            <div className="shrink-0">
+              <h2
+                className="
             text-[28px]
             font-black
             tracking-tight
@@ -227,29 +226,29 @@ export default function Navbar() {
             md:text-[32px]
             lg:text-[34px]
           "
-        >
-          MONARCH
-        </h2>
-      </div>
+              >
+                MONARCH
+              </h2>
+            </div>
 
-      {/* Navigation */}
-      <nav className="mt-10 pb-10 sm:mt-12 md:mt-14 lg:mt-16">
-        <ul
-          className="
+            {/* Navigation */}
+            <nav className="mt-10 pb-10 sm:mt-12 md:mt-14 lg:mt-16">
+              <ul
+                className="
             space-y-5
             sm:space-y-6
             md:space-y-7
             lg:space-y-8
             xl:space-y-10
           "
-        >
-          {menuItems.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onClick={() => setOpen(false)}
-                onMouseEnter={() => setHoveredItem(item)}
-                className="
+              >
+                {menuItems.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      onMouseEnter={() => setHoveredItem(item)}
+                      className="
                   inline-block
                   text-[17px]
                   font-medium
@@ -263,18 +262,18 @@ export default function Navbar() {
                   lg:text-[21px]
                   xl:text-[22px]
                 "
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
 
-    {/* Right Image */}
-    <div
-      className="
+          {/* Right Image */}
+          <div
+            className="
         relative
         hidden
         h-full
@@ -282,12 +281,12 @@ export default function Navbar() {
         overflow-hidden
         md:block
       "
-    >
-      {/* Close Button */}
-      <button
-        onClick={() => setOpen(false)}
-        aria-label="Close menu"
-        className="
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+              className="
           absolute
           right-6
           top-8
@@ -308,17 +307,17 @@ export default function Navbar() {
           xl:right-14
           xl:top-14
         "
-      >
-        <X
-          size={28}
-          strokeWidth={1.5}
-          className="text-black sm:size-32 lg:size-36"
-        />
-      </button>
+            >
+              <X
+                size={28}
+                strokeWidth={1.5}
+                className="text-black sm:size-32 lg:size-36"
+              />
+            </button>
 
-      {/* Image */}
-      <div
-        className="
+            {/* Image */}
+            <div
+              className="
           absolute
           inset-0
           p-5
@@ -326,13 +325,13 @@ export default function Navbar() {
           lg:p-10
           xl:p-12
         "
-      >
-        <div className="relative h-full w-full overflow-hidden rounded-xl lg:rounded-2xl">
+            >
+              <div className="relative h-full w-full overflow-hidden rounded-xl lg:rounded-2xl">
 
-          <img
-            src={hoveredItem.image}
-            alt={hoveredItem.label}
-            className="
+                <img
+                  src={hoveredItem.image}
+                  alt={hoveredItem.label}
+                  className="
               h-full
               w-full
               object-cover
@@ -340,14 +339,14 @@ export default function Navbar() {
               duration-500
               ease-in-out
             "
-          />
+                />
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/10" />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/10" />
 
-          {/* Image Label */}
-          <div
-            className="
+                {/* Image Label */}
+                <div
+                  className="
               absolute
               bottom-7
               left-7
@@ -358,9 +357,9 @@ export default function Navbar() {
               xl:bottom-14
               xl:left-14
             "
-          >
-            <h3
-              className="
+                >
+                  <h3
+                    className="
                 text-2xl
                 font-semibold
                 text-white
@@ -368,20 +367,20 @@ export default function Navbar() {
                 lg:text-4xl
                 xl:text-5xl
               "
-            >
-              {hoveredItem.label}
-            </h3>
+                  >
+                    {hoveredItem.label}
+                  </h3>
+                </div>
+
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-    </div>
-
-    {/* Mobile Close Button */}
-    <button
-      onClick={() => setOpen(false)}
-      aria-label="Close menu"
-      className="
+          {/* Mobile Close Button */}
+          <button
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+            className="
         absolute
         right-5
         top-6
@@ -396,18 +395,18 @@ export default function Navbar() {
         sm:top-8
         md:hidden
       "
-    >
-      <X
-        size={25}
-        strokeWidth={1.5}
-        className="text-black"
-      />
-    </button>
+          >
+            <X
+              size={25}
+              strokeWidth={1.5}
+              className="text-black"
+            />
+          </button>
 
-  </div>
+        </div>
 
-  <GoogleTranslate />
-</div>
+        <GoogleTranslate />
+      </div>
     </>
   );
 }

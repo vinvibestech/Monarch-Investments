@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-
+import { sectors } from "@/data/sector";
 const company = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
@@ -10,11 +10,11 @@ const company = [
   { name: "Crypto", href: "/crypto-information" },
 ];
 
-const sectors = [
-  { name: "Education", },
-  { name: "Tourism", },
-  { name: "Energy",  },
-  { name: "Agriculture", },
+const sector = [
+  { name: "Education", href: "/business-sectors/education" },
+  { name: "Tourism", href: "/business-sectors/tourism" },
+  { name: "Energy", href: "/business-sectors/energy" },
+  { name: "Agriculture", href: "/business-sectors/agriculture" },
 ];
 
 const resources = [
@@ -82,24 +82,25 @@ export default function Footer() {
           </div>
 
           {/* Our Sectors */}
-          <div>
-            <h3 className="text-xl font-semibold lg:text-[22px]">
-              Our Sectors
-            </h3>
+    {/* Our Sectors */}
+<div>
+  <h3 className="text-xl font-semibold lg:text-[22px]">
+    Our Sectors
+  </h3>
 
-            <ul className="mt-5 space-y-4 lg:mt-6 lg:space-y-5">
-              {sectors.map((item) => (
-                <li key={item.name}>
-                  <p
-                   
-                    className="text-base text-white/85 transition hover:text-white sm:text-lg lg:text-[19px]"
-                  >
-                    {item.name}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <ul className="mt-5 space-y-4 lg:mt-6 lg:space-y-5">
+    {sector.map((item) => (
+      <li key={item.name}>
+        <Link
+          href={item.href}
+          className="text-base text-white/85 transition hover:text-white sm:text-lg lg:text-[19px]"
+        >
+          {item.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Empty cell */}
           <div className="hidden lg:block" />
