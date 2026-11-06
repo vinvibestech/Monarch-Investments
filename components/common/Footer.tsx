@@ -25,9 +25,9 @@ const resources = [
 
 const social = [
   { name: "Facebook", href: "https://www.facebook.com/monarchinvestmentsglobal/" },
-   { name: "Instagram", href: "https://www.instagram.com/monarchinvestmentsglobal/" },
+  { name: "Instagram", href: "https://www.instagram.com/monarchinvestmentsglobal/" },
   { name: "Youtube", href: "https://www.youtube.com/@Monarchinvestmentsglobal" },
- 
+
 ];
 
 export default function Footer() {
@@ -82,25 +82,25 @@ export default function Footer() {
           </div>
 
           {/* Our Sectors */}
-    {/* Our Sectors */}
-<div>
-  <h3 className="text-xl font-semibold lg:text-[22px]">
-    Our Sectors
-  </h3>
+          {/* Our Sectors */}
+          <div>
+            <h3 className="text-xl font-semibold lg:text-[22px]">
+              Our Sectors
+            </h3>
 
-  <ul className="mt-5 space-y-4 lg:mt-6 lg:space-y-5">
-    {sector.map((item) => (
-      <li key={item.name}>
-        <Link
-          href={item.href}
-          className="text-base text-white/85 transition hover:text-white sm:text-lg lg:text-[19px]"
-        >
-          {item.name}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
+            <ul className="mt-5 space-y-4 lg:mt-6 lg:space-y-5">
+              {sector.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-base text-white/85 transition hover:text-white sm:text-lg lg:text-[19px]"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Empty cell */}
           <div className="hidden lg:block" />
@@ -111,7 +111,7 @@ export default function Footer() {
 
             <div className="mt-5 space-y-4 text-base text-white/85 sm:text-lg lg:mt-6 lg:space-y-5 lg:text-[19px]">
               <p>Dubai, UAE</p>
-     
+
               <p>monarchinvestmentsglobal@gmail.com</p>
             </div>
           </div>
