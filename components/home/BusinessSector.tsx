@@ -188,21 +188,9 @@ export default function BusinessSector() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 flex flex-col gap-6 lg:mt-0 lg:flex-row lg:items-end lg:justify-between">
+        <div className="mt-12 flex flex-col gap-6 lg:mt-0 lg:flex-row lg:items-end lg:justify-end">
 
-          {/* Next Sector */}
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={nextSector.label}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-              className="text-lg sm:text-xl lg:text-[24px]"
-            >
-              Next : {nextSector.label}
-            </motion.p>
-          </AnimatePresence>
+
 
           {/* Navigation Buttons */}
           <div className="flex gap-4">

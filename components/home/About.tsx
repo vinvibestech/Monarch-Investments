@@ -2,8 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion, type Variants } from "framer-motion";
+import {
+  motion,
+  type Variants,
+  useMotionValue,
+  useTransform,
+  animate,
+  useInView,
+} from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -63,6 +71,46 @@ const statsData = [
   },
 ];
 
+// Number Count Animation
+function CountUp({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+
+  const isInView = useInView(ref, {
+    once: false,
+    amount: 0.5,
+  });
+
+  const number = Number(value.replace(/[^0-9.]/g, ""));
+
+  const count = useMotionValue(0);
+
+  const rounded = useTransform(count, (latest) =>
+    Math.round(latest)
+  );
+
+  const prefix = value.match(/^[^0-9]*/)?.[0] ?? "";
+  const suffix = value.match(/[^0-9.]*$/)?.[0] ?? "";
+
+  const displayValue = useTransform(rounded, (latest) => {
+    return `${prefix}${latest.toLocaleString("en-US")}${suffix}`;
+  });
+
+  useEffect(() => {
+    if (isInView) {
+      count.set(0);
+
+      const controls = animate(count, number, {
+        duration: 2.5,
+        ease: [0.16, 1, 0.3, 1],
+      });
+
+      return () => controls.stop();
+    }
+  }, [isInView, number, count]);
+
+  return <motion.span ref={ref}>{displayValue}</motion.span>;
+}
+
 export default function About() {
   return (
     <section className="overflow-hidden py-16 sm:py-20 lg:py-28">
@@ -92,7 +140,7 @@ export default function About() {
             {/* Heading */}
             <motion.h2
               variants={fadeUp}
-              className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="mt-4 font-main w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               Creating Opportunities. Building Long-Term Value.
             </motion.h2>
@@ -172,8 +220,9 @@ export default function About() {
             <motion.div
               key={stat.label}
               variants={fadeUp}
-              className={`text-center ${index === 2 ? "sm:col-span-2 lg:col-span-1" : ""
-                }`}
+              className={`text-center ${
+                index === 2 ? "sm:col-span-2 lg:col-span-1" : ""
+              }`}
             >
               <p className="text-lg sm:text-xl lg:text-[24px]">
                 {stat.label}
@@ -183,7 +232,7 @@ export default function About() {
                 variants={fadeUp}
                 className="mt-4 text-4xl font-semibold sm:text-5xl lg:mt-8 lg:text-[56px]"
               >
-                {stat.value}
+                <CountUp value={stat.value} />
               </motion.h3>
             </motion.div>
           ))}

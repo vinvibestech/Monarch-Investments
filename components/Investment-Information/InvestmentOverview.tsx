@@ -11,7 +11,7 @@ export default function InvestmentOverview() {
             </span>
 
             <h2
-                className={`mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
+                className={`font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
             >
                 Beyond Capital. Building Opportunities.
 

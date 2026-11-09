@@ -19,7 +19,7 @@ export default function ServicesSection() {
               Our Services
             </span>
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
+            <h2 className="font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
              Comprehensive Business &
               <br />
               Investment Solutions

@@ -81,7 +81,7 @@ export default function IndustryFocus() {
 
           <motion.h2
             variants={cardVariants}
-            className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[48px]"
+            className="font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[48px]"
           >
             Four Sectors. A World of Possibilities.
           </motion.h2>

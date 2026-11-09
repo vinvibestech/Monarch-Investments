@@ -8,7 +8,7 @@ export default function BlogFinalCTA() {
             <div className="relative bg-black min-h-[300px] md:min-h-[300px] overflow-hidden rounded-[28px] bg-[#F4F5F6] flex items-center justify-center">
                 {/* Main Content */}
                 <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-18">
-                    <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight leading-[1.15] mb-6">
+                    <h2 className="font-main text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight leading-[1.15] mb-6">
                         Have a Perspective to Share or an
 
                         <br className="hidden sm:block" /> Opportunity to Explore?

@@ -7,14 +7,14 @@ const sectors = [
     title: "Education",
     description:
       "Investing in educational initiatives and solutions that encourage knowledge, skill development, innovation, and opportunities for future generations.",
-       image: "/about/Educations.png",
+       image: "/about/Education.png",
   },
   {
      number: "02",
     title: "Tourism",
     description:
       "Supporting sustainable tourism and hospitality opportunities designed to connect people, destinations, cultures, and economic potential.",
-       image: "/about/Tourisms.png",
+       image: "/about/Tourism.png",
   },
   {
      number: "03",
@@ -68,7 +68,7 @@ export default function BusinessSectors() {
           {/* LEFT SIDE */}
 
           <div>
-            <h2 className="w-[280px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.15]">
+            <h2 className="font-main w-[280px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.15]">
               Our Business
               <br />
               Sectors
@@ -107,10 +107,8 @@ export default function BusinessSectors() {
                 {/* TITLE */}
 
                 <h3 className="mt-5 text-lg font-semibold tracking-wide sm:text-xl">
-                  <span className="text-[#C99B45]">
-                    {sector.number}
-                  </span>
-                  <span className="mx-2">—</span>
+             
+           
                   {sector.title}
                 </h3>
 

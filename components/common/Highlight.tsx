@@ -30,7 +30,7 @@ export default function Highlight({
             {label}
           </span>
 
-          <h2 className="mt-3 max-w-[760px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.2]">
+          <h2 className="font-main mt-3 max-w-[760px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-[41px] lg:leading-[1.2]">
             {title}
           </h2>
         </div>

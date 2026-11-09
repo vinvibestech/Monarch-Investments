@@ -86,7 +86,7 @@ export default function WhoWeAre() {
 
             <motion.h2
               variants={itemVariants}
-              className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               One Vision. Diverse Businesses. Shared Growth.
             </motion.h2>

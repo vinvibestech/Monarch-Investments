@@ -85,7 +85,7 @@ export default function BuildingSection() {
             {/* Heading */}
             <motion.h2
               variants={textVariants}
-              className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="font-main mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               Where Investment Meets Innovation
             </motion.h2>

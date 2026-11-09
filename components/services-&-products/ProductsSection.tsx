@@ -38,7 +38,7 @@ const sectors = [
       "Energy Storage",
       "Sustainable Energy Development",
     ],
-    image: "/service/SerEnergy.png",
+    image: "/service/energy.png",
     button: "Explore Energy Solutions",
     href: "/services/energy",
   },
@@ -56,7 +56,7 @@ const sectors = [
       "Institutional Development",
       "Learning Opportunities",
     ],
-    image: "/service/SerEducation.png",
+    image: "/service/Education.png",
     button: "Explore Education Opportunities",
     href: "/services/education",
   },
@@ -75,7 +75,7 @@ const sectors = [
       "Hospitality Partnerships",
       "Sustainable Tourism",
     ],
-    image: "/service/SerTourism.png",
+    image: "/service/Tourism.png",
     button: "Explore Tourism Opportunities",
     href: "/services/tourism",
   },
@@ -94,7 +94,7 @@ export default function ProductsSection() {
             Our Business Sectors
           </span>
 
-          <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
+          <h2 className="font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
             Building Opportunities Across Diverse Industries
           </h2>
 
@@ -146,7 +146,7 @@ export default function ProductsSection() {
                 </span>
 
                 {/* Title */}
-                <h3 className="mt-4 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-[40px]">
+                <h3 className="font-main mt-4 text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-[40px]">
                   {sector.title}
                 </h3>
 

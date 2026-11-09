@@ -9,7 +9,7 @@ export default function FinalCTA() {
 
         {/* Main Content */}
         <div className="relative z-10 max-w-3xl mx-auto text-center px-6 py-20">
-          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight  leading-[1.15] mb-6">
+          <h2 className="font-main text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight  leading-[1.15] mb-6">
             Have an Opportunity
             <br className="hidden sm:block" /> Worth Exploring?
           </h2>

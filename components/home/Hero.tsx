@@ -60,7 +60,7 @@ export default function Hero() {
                         {/* Animated Heading */}
                         <motion.h1
                             className="
-                                font-bold text-white
+                                font-main font-black text-white
                                 text-[32px] leading-[1.2]
                                 sm:text-[40px] sm:leading-[1.15]
                                 md:text-[48px]

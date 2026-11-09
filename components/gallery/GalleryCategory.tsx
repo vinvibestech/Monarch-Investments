@@ -54,7 +54,7 @@ export default function GalleryCategory({
               News & Insights
             </span>
 
-            <h1 className="mt-4 text-4xl font-semibold leading-tight  sm:text-5xl lg:text-[41px] lg:leading-[1.15]">
+            <h1 className="font-main mt-4 text-4xl font-semibold leading-tight  sm:text-5xl lg:text-[41px] lg:leading-[1.15]">
               {title}
             </h1>
 

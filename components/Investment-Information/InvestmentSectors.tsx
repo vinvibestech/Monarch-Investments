@@ -90,7 +90,7 @@ export default function InvestmentSectors() {
 
             <motion.h2
               variants={itemVariants}
-              className="mt-4 max-w-[420px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="font-main mt-4 max-w-[420px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               Recognising Potential. Developing Possibilities.
             </motion.h2>

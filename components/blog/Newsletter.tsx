@@ -55,7 +55,7 @@ export default function Newsletter() {
 
             <motion.h2
               variants={itemVariants}
-              className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="font-main mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               Stay Connected to What Matters.
             </motion.h2>

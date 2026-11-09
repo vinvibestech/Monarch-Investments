@@ -11,7 +11,7 @@ const menuItems = [
   {
     label: "About Us",
     href: "/about",
-    image: "/navbar/aboutimage.png",
+    image: "/navbar/aboutimages.png",
   },
   {
     label: "Services & Products",
@@ -216,19 +216,16 @@ export default function Navbar() {
           >
             {/* Logo */}
             <div className="shrink-0">
-              <h2
-                className="
-            text-[28px]
-            font-black
-            tracking-tight
-            text-black
-            sm:text-[30px]
-            md:text-[32px]
-            lg:text-[34px]
-          "
-              >
-                MONARCH
-              </h2>
+              <Link href="/" className="flex shrink-0 items-center">
+                <Image
+                  src="/home/logos.png"
+                  alt="Monarch"
+                  width={160}
+                  height={50}
+                  priority
+                  className="h-auto w-[100px] object-contain transition-opacity duration-300 sm:w-[100px] lg:w-[140px]"
+                />
+              </Link>
             </div>
 
             {/* Navigation */}

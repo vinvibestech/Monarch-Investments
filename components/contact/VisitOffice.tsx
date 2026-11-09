@@ -14,7 +14,7 @@ export default function VisitOffice() {
               Find Us
             </span>
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
+            <h2 className="font-main mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
               Visit Our Office
             </h2>
           </div>
@@ -45,7 +45,7 @@ export default function VisitOffice() {
       </div>
       <section className={`py-14 sm:py-16 lg:py-18 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26`}>
             <h2
-                className={`mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
+                className={`font-main mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
             >
              Connect With Monarch Global Investments
             </h2>

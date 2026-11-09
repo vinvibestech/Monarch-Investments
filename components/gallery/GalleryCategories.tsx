@@ -17,7 +17,7 @@ export default function GalleryCategories() {
               Gallery
             </span>
 
-            <h2 className="mt-5 max-w-[520px] text-4xl font-semibold leading-[1.15] sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
+            <h2 className="font-main mt-5 max-w-[520px] text-4xl font-semibold leading-[1.15] sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
               Gallery Categories
             </h2>
           </div>

@@ -51,7 +51,7 @@ export default function Testimonials() {
               Testimonials
             </span>
 
-            <h2 className="mt-5 max-w-[620px] text-4xl font-semibold leading-[1.15] sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
+            <h2 className="font-main mt-5 max-w-[620px] text-4xl font-semibold leading-[1.15] sm:text-5xl md:text-[52px] lg:text-[41px] xl:text-[48px]">
               What Our Partners Say
             </h2>
 
@@ -94,7 +94,7 @@ export default function Testimonials() {
       <section id="newssection" className={`py-14 sm:py-16 lg:py-20 mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-26`}>
 
         <h2
-          className={`mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
+          className={`font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15] `}
         >
           Building Connections. Creating Opportunities. Growing Together.
 

@@ -53,7 +53,7 @@ export default async function SectorDetails({
             Our Business Sectors
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-semibold mb-8">
+          <h1 className="font-main text-5xl md:text-7xl font-semibold mb-8">
             {sector.label}
           </h1>
 
@@ -71,7 +71,7 @@ export default async function SectorDetails({
            About The Sector 
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-semibold  max-w-3xl mb-8">
+        <h2 className="font-main text-3xl md:text-5xl font-semibold  max-w-3xl mb-8">
           {sector.heading}
         </h2>
 
@@ -90,7 +90,7 @@ export default async function SectorDetails({
              Our Investment Approach
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-semibold  mb-12">
+          <h2 className="font-main text-3xl md:text-5xl font-semibold  mb-12">
             Our Investment Focus
           </h2>
 
@@ -124,7 +124,7 @@ export default async function SectorDetails({
          Our Vision
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-semibold mb-8">
+        <h2 className="font-main text-3xl md:text-5xl font-semibold mb-8">
           Building a Sustainable Future.
         </h2>
 
@@ -140,7 +140,7 @@ export default async function SectorDetails({
 
         {/* Main Content */}
         <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-20">
-          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight  leading-[1.15] mb-6">
+          <h2 className="font-main text-3xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold tracking-tight  leading-[1.15] mb-6">
              Creating Value Through
             Strategic Investments.
           </h2>

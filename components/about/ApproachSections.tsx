@@ -74,7 +74,7 @@ function Content({
           text-3xl
           font-semibold
           leading-[1.2]
-         
+         font-main
           sm:mt-4
           sm:text-4xl
           md:text-5xl

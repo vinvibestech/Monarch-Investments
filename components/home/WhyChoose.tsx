@@ -130,7 +130,7 @@ export default function WhyChoose() {
 
             <motion.h2
               variants={fadeUp}
-              className="mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
+              className="font-main mt-4 w-full max-w-[720px] text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]"
             >
               Strategic Investment. Sustainable Value.
             </motion.h2>
@@ -280,7 +280,7 @@ function ApproachSection() {
 
         <motion.h2
           variants={fadeUp}
-          className="mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:text-[41px]"
+          className="font-main mt-4 text-3xl font-semibold leading-tight  sm:text-4xl md:text-5xl lg:text-[41px]"
         >
           From Vision to Value.
         </motion.h2>

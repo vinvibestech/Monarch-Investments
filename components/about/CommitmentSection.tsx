@@ -72,7 +72,7 @@ export default function CommitmentSection() {
             className="relative order-2 h-[350px] overflow-hidden rounded-2xl sm:h-[450px] md:h-[550px] lg:order-1 lg:h-[600px]"
           >
             <Image
-              src="/about/OurCommitment.png"
+              src="/about/OurCommitments.png"
               alt="Our Commitment"
               fill
               priority
@@ -94,7 +94,7 @@ export default function CommitmentSection() {
               Our Commitment
             </span>
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
+            <h2 className="font-main mt-4 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:mt-5 lg:text-[41px] lg:leading-[1.15]">
               Growth with Purpose. Value that Lasts.
             </h2>
 

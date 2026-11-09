@@ -15,7 +15,7 @@ export default function page() {
                 title="Connecting Vision with Opportunity. Building Value for Tomorrow."
                 description="Monarch Global Investments is a diversified investment platform focused on identifying opportunities, fostering strategic partnerships and supporting sustainable growth across key industries."
                 tagLine="With a forward-looking approach and a commitment to responsible business practices, we bring together vision, expertise and innovation to create meaningful long-term value."
-                image="/about/AboutUsHeros.png"
+                image="/about/AboutUsHerosction.png"
             />
             <WhoWeAre/>
             <BusinessSectors/>

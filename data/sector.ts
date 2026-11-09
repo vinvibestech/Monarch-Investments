@@ -58,7 +58,7 @@ export const sectors = [
   },
   {
     label: "Tourism",
-    image: "/home/Tourisms.png",
+    image: "/home/Tourisms1.png",
     description:
       "We explore opportunities that connect cultures, support communities and contribute to sustainable tourism development.",
     heading: "Connecting Destinations. Creating Experiences.",

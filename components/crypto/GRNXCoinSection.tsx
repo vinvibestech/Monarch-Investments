@@ -38,7 +38,7 @@ export default function GRNXCoinSection() {
           {/* Heading */}
      
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight">
+          <h1 className="font-main text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight">
             GRNX COIN
           </h1>
 
