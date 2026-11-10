@@ -13,7 +13,7 @@ export default function ContactUsSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/home/homecontacts.png"
+          src="/home/homecontact.png"
           alt="Dubai skyline at sunset"
           fill
           priority
@@ -46,7 +46,7 @@ Connect with Monarch Global Investments to explore strategic opportunities, buil
           </p>
           <Link
                 href="/about"
-                className="group inline-flex items-center gap-3 rounded-full border border-[#C99B45]/50 px-7 py-3.5 text-sm md:text-[16px] font-semibold text-[#E7C477] transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
+                className="group inline-flex items-center gap-3 rounded-full border border-white px-7 py-3.5 text-sm md:text-[16px] font-semibold transition-all duration-300 hover:border-[#C99B45] hover:bg-[#C99B45] hover:text-[#172A45]"
               >
                 Contact Us
 

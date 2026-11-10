@@ -23,7 +23,7 @@ const commitments = [
     title: "Lasting Impact",
     description:
       "Creating meaningful long-term economic and social value.",
-    image: "/about/LastingImpact.png",
+    image: "/about/LastingImpacts.png",
   },
 ];
 

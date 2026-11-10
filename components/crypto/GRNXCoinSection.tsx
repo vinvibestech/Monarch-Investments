@@ -26,7 +26,7 @@ export default function GRNXCoinSection() {
 </div>
 
       {/* Content */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center px-6 py-20">
+      <section className="relative z-10 min-h-screen flex items-center justify-center px-6 py-30">
 
         <motion.div
           initial={{ opacity: 0, y: 35 }}

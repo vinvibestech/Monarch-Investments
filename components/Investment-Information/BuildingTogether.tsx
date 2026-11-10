@@ -100,7 +100,7 @@ export default function BuildingTogether() {
           >
             <div className="relative aspect-[4/4.2] w-full rounded-2xl overflow-hidden sm:aspect-[5/4] lg:aspect-[4/4.5]">
               <Image
-                src="/Investment/Building.png"
+                src="/Investment/Buildings.png"
                 alt="Strategic business partnership and collaboration"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
