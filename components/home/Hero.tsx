@@ -39,7 +39,7 @@ export default function Hero() {
                 className="absolute inset-0 h-full w-full object-cover"
             >
                 <source
-                    src="/home/heroSectionVideo.mp4"
+                    src="/home/heroSection.MOV"
                     type="video/mp4"
                 />
             </video>

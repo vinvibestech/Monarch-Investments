@@ -4,6 +4,22 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { sectors } from "@/data/sector";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Business Sectors | Monarch Investments",
+  description:
+    "Explore Monarch Investments' business sectors, including agriculture, education, renewable energy and tourism, driving sustainable development.",
+  keywords: [
+    "Monarch business sectors",
+    "agriculture investment",
+    "education sector investment",
+    "energy development",
+    "tourism investment",
+    "diversified investment company",
+  ],
+};
+
 interface PageProps {
   params: Promise<{
     slug: string;

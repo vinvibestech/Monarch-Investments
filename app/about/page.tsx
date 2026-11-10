@@ -4,6 +4,21 @@ import CommitmentSection from "@/components/about/CommitmentSection";
 import WhoWeAre from "@/components/about/WhoWeAre";
 import Footer from "@/components/common/Footer";
 import Highlight from "@/components/common/Highlight";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Monarch Investments | Vision & Global Expertise",
+  description:
+    "Discover Monarch Investments, our vision, strategic approach and commitment to responsible investment and sustainable development across key industries.",
+  keywords: [
+    "about Monarch Investments",
+    "investment company Dubai",
+    "investment vision",
+    "global development company",
+    "sustainable business growth",
+    "strategic investments",
+  ],
+};
 
 
 export default function page() {

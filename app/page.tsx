@@ -9,6 +9,26 @@ import Hero from "@/components/home/Hero";
 import LatestNews from "@/components/home/LatestNews";
 import WhyChoose from "@/components/home/WhyChoose";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Monarch Investments | Global Investment & Development",
+  description:
+    "Explore investment and development opportunities with Monarch Investments across agriculture, education, renewable energy and sustainable tourism.",
+  keywords: [
+    "Monarch Investments",
+    "investment company UAE",
+    "global investments",
+    "sustainable investment",
+    "agriculture investment",
+    "education investment",
+    "renewable energy",
+    "tourism investment",
+  ],
+};
+
+
 export default function Home() {
   return (
 

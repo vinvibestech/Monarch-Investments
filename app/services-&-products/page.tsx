@@ -4,6 +4,21 @@ import ConnectingInvestment from "@/components/services-&-products/ConnectingInv
 import ProductsSection from "@/components/services-&-products/ProductsSection";
 import ServicesSection from "@/components/services-&-products/ServicesSection";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Investment Services & Solutions | Monarch Investments",
+  description:
+    "Explore Monarch Investments' services and solutions, including investment consulting, strategic partnerships and sustainable project development.",
+  keywords: [
+    "investment consulting UAE",
+    "Monarch services",
+    "business development solutions",
+    "strategic investment consulting",
+    "sustainable development services",
+  ],
+};
+
 
 export default function page() {
     return (

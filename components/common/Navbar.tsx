@@ -26,7 +26,7 @@ const menuItems = [
   {
     label: "Crypto Information",
     href: "/crypto-information",
-    image: "/navbar/coin.jpeg",
+    image: "/navbar/coin.png",
   },
   // {
   //   label: "Aquaponics Products",

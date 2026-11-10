@@ -5,6 +5,20 @@ import ContactSection from "@/components/contact/ContactSection";
 import ContactUs from "@/components/contact/ContactUs";
 import VisitOffice from "@/components/contact/VisitOffice";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Monarch Investments | Business Enquiries",
+  description:
+    "Get in touch with Monarch Investments to discuss investment opportunities, strategic partnerships, business enquiries and development projects.",
+  keywords: [
+    "contact Monarch Investments",
+    "investment enquiry UAE",
+    "business partnership Dubai",
+    "investment consultation",
+    "strategic partnership enquiries",
+  ],
+};
 
 
 

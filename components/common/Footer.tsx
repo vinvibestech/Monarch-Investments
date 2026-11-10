@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { sectors } from "@/data/sector";
+import Image from "next/image";
 const company = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
@@ -37,11 +38,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-10 md:gap-y-14 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-x-16 lg:gap-y-16">
           {/* Logo */}
           <div>
-            <Link
-              href="/"
-              className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[48px]"
-            >
-              MONARCH
+            <Link href="/" className="inline-block">
+              <Image
+                src="/navbar/footerLogo.png"
+                alt="Monarch Investments"
+                width={220}
+                height={80}
+                className="h-auto w-[160px] sm:w-[180px] lg:w-[200px] object-contain"
+                priority
+              />
             </Link>
           </div>
 

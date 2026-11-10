@@ -4,6 +4,22 @@ import SectionHeader from "@/components/common/SectionHeader";
 import GalleryCategories from "@/components/gallery/GalleryCategories";
 import Testimonials from "@/components/gallery/Testimonials";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gallery & Testimonials | Monarch Investments",
+  description:
+    "Explore the Monarch Investments gallery, project highlights, business activities and testimonials reflecting our development initiatives.",
+  keywords: [
+    "Monarch Investments gallery",
+    "investment projects",
+    "client testimonials",
+    "development project gallery",
+    "business achievements",
+    "Monarch reviews",
+  ],
+};
+
 
 export default function page() {
     return (

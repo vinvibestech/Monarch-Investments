@@ -7,6 +7,22 @@ import Highlight from "@/components/common/Highlight";
 import SectionHeader from "@/components/common/SectionHeader";
 import LatestNews from "@/components/home/LatestNews";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Investment News & Industry Insights | Monarch Investments",
+  description:
+    "Read the latest insights and updates on agriculture, education, clean energy, sustainable tourism and global investment developments.",
+  keywords: [
+    "investment news",
+    "Monarch Investments blog",
+    "agriculture innovation news",
+    "renewable energy insights",
+    "education trends",
+    "sustainable tourism news",
+  ],
+};
+
 
 
 export default function page() {
