@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/components/common/Footer";
 import Highlight from "@/components/common/Highlight";
 import ContactSection from "@/components/contact/ContactSection";
