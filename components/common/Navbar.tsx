@@ -124,16 +124,20 @@ export default function Navbar() {
             : "h-[106px] bg-transparent px-6 sm:px-10 lg:px-24"
             }`}
         >
-          <Link href="/" className="flex shrink-0 items-center">
-            <Image
-              src="/home/logos.png"
-              alt="Monarch"
-              width={160}
-              height={50}
-              priority
-              className="h-auto w-[100px] object-contain transition-opacity duration-300 sm:w-[100px] lg:w-[110px]"
-            />
-          </Link>
+     <Link href="/" className="flex shrink-0 items-center">
+  <Image
+    src={
+      isScrolledStyle
+        ? "/home/logos.png"
+        : "/navbar/footerLogo.png"
+    }
+    alt="Monarch Investments"
+    width={160}
+    height={50}
+    priority
+    className="h-auto w-[100px] object-contain transition-all duration-300 sm:w-[100px] lg:w-[110px]"
+  />
+</Link>
 
           {/* Right */}
           <div className="flex items-center gap-4 sm:gap-8">
